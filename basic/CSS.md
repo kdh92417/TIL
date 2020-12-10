@@ -33,7 +33,7 @@
     ```
       <br>
 
-<br>
+<br><br>
 
 ## 2. CSS의 규칙들
 
@@ -52,7 +52,7 @@
      ```
      <br>
 
-<br>
+<br><br>
 
 ## 3. Cascading의 뜻
 
@@ -80,17 +80,17 @@
 
 ## 4. margin, border, padding
 
-- ### margin
+### margin
 
-  - box의 border(경계)의 바깥에 있는 공간이다.
+- box의 border(경계)의 바깥에 있는 공간이다.
 
-  - 값이 하나면 사방에 다 적용되고, 2개면 top/bottom , left/right 로 되고, 4개 값의 적용되면 top, right, bottom, left로 적용이 된다.
+- 값이 하나면 사방에 다 적용되고, 2개면 top/bottom , left/right 로 되고, 4개 값의 적용되면 top, right, bottom, left로 적용이 된다.
 
-  - ```css
-    margin: 10px 20px;
-    margin: 10px 30px 40px 50px;
-    margin: 30px;
-    ```
+- ```css
+  margin: 10px 20px;
+  margin: 10px 30px 40px 50px;
+  margin: 30px;
+  ```
 
 <br>
 
@@ -141,7 +141,7 @@
 - `class`는 그룹으로 묶어서 스타일을 지정할 때 쓰는 이름 (표기방식은 `.이름`)
   - 한 태그에 여러 클래스를 가질 수 있다. (id는 1개만)
 
-<br>
+<br><br>
 
 ## 6. display 태그
 
@@ -158,7 +158,7 @@
   2. 정해진 형식이 없어서 깔끔하지 않다.
   3. 반응형 디자인을 할 수가 없다.
 
-<br>
+<br><br>
 
 ## 7. Flexbox
 
@@ -215,17 +215,164 @@
 
   - flexbox의 width의 사이즈는 초기 설정값으로면 인식하고 같은 줄에 하기위해 사이즈를 바꾼다.
 
-<br>
+<br><br>
 
-## Position 태그
+## 8. Position 태그
 
-- `position: fixed;`
+### `position: fixed;`
 
-  - 스크롤을 내려도 위치가 변함이 없다.
+- 스크롤을 내려도 위치가 변함이 없다.
 
 - `top, right, bottom, left` : 절대 좌표로서 위치를 지정한다.
 
 <br>
+
+### `position: relative;`
+
+- element가 처음 위치한 곳을 기준으로 수정한다.
+
+- `top, right, bottom, left` : 상대 좌표로서 위치를 지정한다.
+
+<br>
+
+### `position: absolute;`
+
+- absolute는 가장 가까운 relative 부모를 기준으로 이동시켜준다.
+
+- `top, right, bottom, left` : 가까운 relative 부모를 기준으로 위치를 이동
+
+<br><br>
+
+## 9. Pseudo Selectors
+
+세부적으로 엘리먼트를 선택해주는 것을 **Pseudo Selector** 라고 한다.
+
+<br>
+
+### 예시
+
+- 첫번째 div : `div:first-child`
+
+- 마지막 div : `div:last-child` or `div:last-of-type`
+
+- 원하는 순서의 div : `div:nth-child(숫자)`
+
+  - 숫자에 방정식을 넣어도됨 ex) `div:nth-child(2n + 3)` : 3번째부터 짝수 인것들 지정
+
+- input태그의 required 인지 아닌지 여부에 따라 지정
+
+  - `input:required {}` or `input:optional {}`
+
+<br>
+
+### Combinators
+
+- `태그` `태그` : 태그안에 태그를 지정
+
+  - `span p {}` : `span` 안에 있는 `p`태그
+
+- 부모태그 `>` 자식태그 : 부모태그 바로밑에있는 자식태그를 지정
+
+  - `div > span` : `div` 태그 바로 밑에 있는 `span` 태그
+
+- 태그형제 `+` 태그 : 형제태그 옆에있는 태그를 지정
+
+  - `div` + `span` : `div`태그 바로 옆 `span`태그 지정
+
+- 태그 `~` 태그 : 바로 옆에있지는 않은 이웃 형제태그를 지정
+
+  - ```html
+      <style>
+        <!-- p태그 옆 span태그를 지정하고 싶을떄 `+` 태그로는 바로옆이 아니라서 지정이안된 그래서 -->
+        <!-- `~` 태그로 지정 -->
+        p ~ span {
+          color: white;
+        }
+      <style>
+      <body>
+        <div>
+          <p>
+          </p>
+          <address>hi</address>
+          <span>hello</span>
+        </div>
+      </body>
+    ```
+
+<br>
+
+### Attribute를 통해 지정
+
+- `태그[Attribute] {}` : 해당 태그 안에 있는 모든 Attribute를 가진 태그를 지정
+
+  - `input[type="password"] {}` : input태그의 type이 password인 태그 지정
+
+- `~` : 어떤 text가 포함된 모든 태그를 지정
+
+  - `input[placeholder~="name"] {}` : placeholder에 `name` 이 포함된 모든 태그지정
+
+  - `$` : 끝에 오는 경우
+
+  - `^` : 처음에 오는 경우
+
+<br>
+
+### States
+
+- active : 버튼을 누르고 있을 때
+
+  - ex) `button:active {}`
+
+- hover : 마우스가 대상 위에 놓여져 있을 때
+
+- focus : 키보드로 선택되었을 때
+
+- visited : 링크를 클릭 했엇을 때
+
+- focus-within : focused인 자식을 가진 부모 엘리먼트에 적용
+
+<br>
+
+### 기타
+
+- `::` : 해당 상태나 액션 등을 취할 때 그 상태 또는 액션만 변화하게 만든다.
+
+  - `::placeholder` : placeholder
+
+  - `::selection` : 드래그할 때
+
+  - `::first-letter` : 첫 글자
+
+<br><br>
+
+## Variables
+
+css에서도 프로그래밍 언어처럼 변수를 저장하여 사용 할 수가 있다.
+
+### 예시
+
+- ```css
+  :root {
+    --main-color: #fcce01;
+    --default-border: 1px solid var(--main-color);
+  }
+
+  p {
+    background-color: var(--main-color);
+  }
+  a {
+    background-color: var(--main-color);
+    border: var(--default-border);
+  }
+  ```
+
+- `--main-color`를 document의 root에 저장한 뒤
+
+- `var(--main-color)` 를 저장해두었던 변수에서 끄집어서 사용할 수가 있다.
+
+- `--` + `변쉬이름` 저장, 공백이 있을 시 dash `-` 로 채우고 사용시에는 `var(변수이름)`
+
+<br><br>
 
 ## Etc
 
