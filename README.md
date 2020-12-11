@@ -18,6 +18,7 @@
 
 - [HTML, CSS, Javascript의 개념](https://github.com/kdh92417/TIL/blob/master/basic/basic%20language%20of%20web.md)
 - [HTML 기초](https://github.com/kdh92417/TIL/blob/master/basic/HTML%20Basic.md)
+- [CSS 기초](https://github.com/kdh92417/TIL/blob/master/basic/CSS.md)
 
 ### Javascript
 
