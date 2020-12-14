@@ -4,6 +4,8 @@
 > 하루를 정리하기 위해 이해한 내용만 기록한다.
 > TIL 은 꾸준함이 생명이라는 사실을 잊지 말자
 
+<br>
+
 ## 작성규칙
 
 - 폴더와 파일명은 영문으로 작성
@@ -12,6 +14,8 @@
 
 [Namjune Kim](https://github.com/namjunemy)님의 Github TIL를 보고 많은 도움을 받았다.
 
+<br>
+
 ## 분류
 
 ### HTML, CSS 기초
@@ -19,6 +23,8 @@
 - [HTML, CSS, Javascript의 개념](https://github.com/kdh92417/TIL/blob/master/basic/basic%20language%20of%20web.md)
 - [HTML 기초](https://github.com/kdh92417/TIL/blob/master/basic/HTML%20Basic.md)
 - [CSS 기초](https://github.com/kdh92417/TIL/blob/master/basic/CSS.md)
+- [Advanced CSS](https://github.com/kdh92417/TIL/blob/master/basic/advanced_css.md)
+- [Git and Github]() - 수정중
 
 ### Javascript
 

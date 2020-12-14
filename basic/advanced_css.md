@@ -184,3 +184,48 @@
 ### 참조 사이트
 
 - https://animista.net/
+
+<br><br>
+
+## Media Queries
+
+### Media query란?
+
+- Media query는 오직 CSS만을 이용해서 스크린의 사이즈를 알 수 있는 방법이다.
+- 그리고 이를 이용하여 우리는 스크린의 사이즈에 따라서 CSS를 바꿀 수 있고 이것을 `Responsive Website` 라고 한다.
+
+<br>
+
+### 예시
+
+- ```css
+    @media screen and (원하는 사이즈) {
+      원하는 CSS 스타일 작성
+    }
+  ```
+- ```css
+    @media screen and (max-width: 800px) {
+      div {
+        background-color: violet;
+      }
+    }
+
+    스크린의 사이즈가 최대 스크린의 너비가 800px까지는 background-color:violet; 이라는 뜻
+  ```
+
+- ```css
+  @media screen and (min-width: 900px) and (max-width: 1300px) {
+    div {
+      background-color: turquoise;
+    }
+  }
+  이 조건은 스크린의 너비가 900px ~ 1300px 사이에 있을때만 적용 된다는 뜻
+  ```
+
+- ```css
+  @media screen and (min-width: 800px) and (max-width: 1000px) and (orientation: landscape) {
+    background-color: black;
+  }
+
+  스크린의 너비가 800 ~ 1000px 이고 스크린이 가로모드일때 background-color가 black이라는 뜻
+  ```
