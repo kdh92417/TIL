@@ -115,3 +115,19 @@
 - `/friends.html?username=ad&password=141`
 
 - url 뒷 부분에 입력한 username과 password가 보인다. 이것이 get방식
+
+<br>
+
+## box-sizing
+
+- 어떤 box에 padding을 줘버리면 css는 padding을 주면서 box의 크기도 유지할려고 하기때문에, 전체 box사이즈가 커진다. 이것을 방지하기위해 `box-sizing:border-box` 한다.
+
+- ```css
+  태그 {
+    box-sizing: border-box;
+  }
+  ```
+
+- 이렇게 하면 padding을 주더라도 박스의 크기가 변하지 않는다.
+
+- 즉, padding을 주고 싶은데 box 사이즈가 그대로 있기를 바랄때 쓰면 된다.
