@@ -29,3 +29,10 @@
 ### Javascript
 
 - [기본적으로 알아야 될 Javascript 기본 개념 (Nomadcoders)](https://github.com/kdh92417/TIL/Users/adam/TIL/Javascript_Theory.md)
+
+### Python
+
+- [기본 개념]()
+- [Logical operator]()
+- [string formatting]()
+- [Optional Parameter]()
