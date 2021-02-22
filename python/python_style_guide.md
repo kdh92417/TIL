@@ -190,3 +190,24 @@ a = a*2 - 1
 wifi = x*x + y*y
 c = (a+b) * (a-b)
 ```
+
+<br>
+
+### 코멘트
+
+일반 코드와 같은 줄에 코멘트를 사용할 경우, 코멘트 앞에 띄어쓰기를 최소 2개를 해준다.
+
+```python
+# 나쁜 예
+x = x + 1# 코멘트
+
+
+# 좋은 예
+x = x + 1  # 코멘트
+```
+
+<br>
+
+## Reference
+
+- [코드잇 파이썬 프로그래밍 기초](https://www.codeit.kr/courses/intro-to-python-programming)

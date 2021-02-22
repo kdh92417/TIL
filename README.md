@@ -18,13 +18,17 @@
 
 ## 분류
 
+### Computer Science
+
+- [컴퓨터 구조]()
+
 ### HTML, CSS 기초
 
 - [HTML, CSS, Javascript의 개념](https://github.com/kdh92417/TIL/blob/master/basic/basic%20language%20of%20web.md)
 - [HTML 기초](https://github.com/kdh92417/TIL/blob/master/basic/HTML%20Basic.md)
 - [CSS 기초](https://github.com/kdh92417/TIL/blob/master/basic/CSS.md)
 - [Advanced CSS](https://github.com/kdh92417/TIL/blob/master/basic/advanced_css.md)
-- [Git and Github]() - 수정중
+- [Git and Github](https://github.com/kdh92417/TIL/blob/master/basic/git_and_github.md) - 수정중
 
 ### Javascript
 

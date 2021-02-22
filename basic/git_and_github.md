@@ -23,3 +23,13 @@
 - 원하는 시점(버전)으로 돌아갈 수 있다.
 - commit을 하면 `git`이 업데이트된 것을 알지만 `github`에서는 아직 모른다.
 - github에서 알려주기 위해서 push를 한다.
+
+<br>
+
+## Branch
+일종의 코드들의 평행세계 같은 것으로
+
+![Branch](https://blog.kakaocdn.net/dn/cRPkVU/btquUBRb7GK/bGy8lytovCtjsoP9SZKTJ0/img.jpg)
+
+## Static Website
+HTML, CSS, JavaScript로만 이루어진 사이트
