@@ -21,6 +21,7 @@
 ### Computer Science
 
 - [컴퓨터 구조](https://github.com/kdh92417/TIL/blob/master/cs/computer_structure.md)
+- [OS](https://github.com/kdh92417/TIL/blob/master/cs/os.md)
 
 ### HTML, CSS 기초
 
