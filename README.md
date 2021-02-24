@@ -22,6 +22,7 @@
 
 - [컴퓨터 구조](https://github.com/kdh92417/TIL/blob/master/cs/computer_structure.md)
 - [OS](https://github.com/kdh92417/TIL/blob/master/cs/os.md)
+- [Network](https://github.com/kdh92417/TIL/blob/master/cs/network.md)
 
 ### HTML, CSS 기초
 
@@ -41,3 +42,7 @@
 - [Logical operator](https://github.com/kdh92417/TIL/blob/master/python/logical_operator.md)
 - [string formatting](https://github.com/kdh92417/TIL/blob/master/python/string_formatting.md)
 - [Optional Parameter](https://github.com/kdh92417/TIL/blob/master/python/optional_parameter.md)
+
+### Django
+
+- [장고 기본 개념 공부 - Tango with Django](https://github.com/kdh92417/TIL/blob/master/django/tango_with_django.md)
