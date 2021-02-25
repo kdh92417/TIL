@@ -21,7 +21,7 @@
 ### Computer Science
 
 - [컴퓨터 구조](https://github.com/kdh92417/TIL/blob/master/cs/computer_structure.md)
-  - [Garbage Collection in Python]()
+  - [Garbage Collection in Python](https://github.com/kdh92417/TIL/blob/master/cs/garbage_collection_in_python.md)
 - [OS](https://github.com/kdh92417/TIL/blob/master/cs/os.md)
 - [Network](https://github.com/kdh92417/TIL/blob/master/cs/network.md)
 
