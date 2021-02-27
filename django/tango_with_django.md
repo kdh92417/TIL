@@ -1,4 +1,4 @@
-1. [장고 기본](#-chpater-3-django-basics)
+3. [Chaper 3. Django Basics](#-chpater-3-django-basics)
 
 <br>
 
@@ -29,3 +29,26 @@
 4. App 디텍터리에 urls.py를 만들어 들어오는 url 문자열을 view로 지정한다.
 
 5. App의 view.py에서 필요한 view를 만들어 HttpResponse object를 반환한다.
+
+<br>
+<br>
+
+# Chapter 4. Templates and Media Files
+
+- Templaes 폴더를 manage.py에 있는 곳에 생성
+
+  - 하위폴더는 각앱별로 생성 : 이래야 어떤앱의 템플릿인지 앎
+
+- [Settings.py](http://settings.py) 에 템플릿을 추가했다고 알려줘야되는데 절대경로로 추가하면안됨 → 다른사람과 같이 프로젝트를 진행할 시 다른사람과의 경로가 맞지 않음
+
+  - 그래서 상대경로를 이용해야함
+
+- TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
+```python
+# 해당 컴퓨터 에서 해당 디텍토리 절대경로를 저장
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# 디텍토리 절대경로와 템플릿 경로를 합침
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+```
