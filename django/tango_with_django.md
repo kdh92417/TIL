@@ -52,3 +52,35 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # 디텍토리 절대경로와 템플릿 경로를 합침
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 ```
+
+## 템플릿 추가하기
+
+1. 밑에 있는 html파일을 템플릿폴더에있는 앱폴더에 추가
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rango</title>
+  </head>
+  <body>
+    <h1>Rango says...</h1>
+    <div>
+      hey there partner! <br />
+      <strong>{{ boldmessage }}</strong><br />
+    </div>
+    <div><a href="/rango/about/">About</a><br /></div>
+  </body>
+</html>
+```
+
+<br>
+
+2. `rango/views.py` index 함수에 템플릿을 render()함수를 이용하여 추가한다.
+
+```python
+def index(request):
+    context_dict = {'boldmessage' : "Crunchy, creamy, cookie, candy, cupcake!"}
+
+    return render(request, 'rango/index.html', context=context_dict)
+```
