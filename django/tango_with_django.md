@@ -1,4 +1,5 @@
-3. [Chaper 3. Django Basics](#-chpater-3-django-basics)
+3. [Django Basics](#-chpater-3-django-basics)
+4. [Templates and Media Files](#-chapter-4-templates-and-media-files)
 
 <br>
 
@@ -80,7 +81,54 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 ```python
 def index(request):
-    context_dict = {'boldmessage' : "Crunchy, creamy, cookie, candy, cupcake!"}
+   # context_dict 생성
+   context_dict = {'boldmessage' : "Crunchy, creamy, cookie, candy, cupcake!"}
 
-    return render(request, 'rango/index.html', context=context_dict)
+   # client의 요청을 입력받고, rango/index.html 반환
+   # html 코드에있는 {{ boldmessage }} 키 값을 받아 밸류를 반환한다.
+   return render(request, 'rango/index.html', context=context_dict)
+```
+
+<br>
+
+## 스태틱 미디어 디텍토리 구성
+
+### 생성
+
+- 스태틱 미디어 디텍토리는 templates 폴더의 위치에 생성 해야된다.
+- e.g ) tango_with_django_project/static
+- 이미지 파일을 넣기위해 static 폴더안에 images 폴더를 생성한다.
+
+### 장고에게 경로 추가
+
+- `STATIC_DIR = os.path.join(BASE_DIR, 'static')`
+- 위의 명령어를 settings.py에 전에 templates 경로 추가한 밑에줄에 추가한다.
+- `STATICFILES_DIRS = [STATIC_DIR, ]` 스태틱파일의 경로가 담긴 경로를 settings.py를 하단에 추가한다.
+- `STATIC_URL = '/static/'` 이 [settings.py](http://settings.py) 하단 에 없으면 추가한다.
+
+### 스태틱 미디어 파일과 템플렛
+
+```python
+<!DOCTYPE html> # 무조건 첫줄에 넣어야됨 만약 load static다음에 넣으면 html 마크업 유효성검사가 실패하게됨
+
+{% load static %}  # 장고에게 템플릿에있는 스태틱 파일을 쓴다고 알려줌
+									 # 그리고 스태틱템플릿을 태그를 사용할 수 있게 해줌 --> '{% %}'
+
+<html>
+    <head>
+        <title>Rango</title>
+    </head>
+    <body>
+        <h1>Rango says...</h1>
+        <div>
+            hey there partner! <br/>
+            <strong>{{ boldmessage }}</strong><br />
+						# 템플릿 태그를 활용하여 static 이미지를 불러옴
+            <div>
+                <a href="/rango/about">About</a><br />
+                <img src="{% static "images/rango.jpg" %}" art="Picture of Rango" />
+            </div>
+        </div>
+    </body>
+</html>
 ```
