@@ -132,3 +132,44 @@ def index(request):
     </body>
 </html>
 ```
+
+- 정적 파일을 불러오기 위해 static 명령어를 이용
+
+<br>
+
+### 미디어 파일을 서버상에서 제공하기
+
+- settings.py
+
+```python
+# settings.py
+# 미디어 경로 설정하기
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+
+# 빈곳에 루트 설정
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'     # 마지막에 '/' 잊지말기 콘텐츠를 분리하는 구문
+
+# TEMPLATES 의 context_processors에 media 루트 프로세서 추가하기
+'context_processors': [
+    'django.template.context_processors.debug',
+    'django.template.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+    'django.contrib.messages.context_processors.messages',
+    'django.template.context_processors.media'
+],
+```
+
+- project 디텔토리 [urls.py](http://urls.py) 에서
+
+```python
+from django.conf import settings
+from django.conf.urls.static import static
+
+# urlpatterns 밑에 static추가
+urlpatterns = [
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+```
+
+## 기본 작업 흐름
