@@ -11,7 +11,9 @@
 
 <br>
 
-## 예시
+## 문제
+
+피보나치 수열을 Memorization 방식으로 알고리즘 구현하는 문제입니다.
 
 ```python
 def fib_memo(n, cache):

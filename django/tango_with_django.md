@@ -1,5 +1,6 @@
 3. [Django Basics](#-chpater-3-django-basics)
 4. [Templates and Media Files](#-chapter-4-templates-and-media-files)
+5. [Models and Databases](#-chapter-5-models-and-databases)
 
 <br>
 
@@ -173,3 +174,37 @@ urlpatterns = [
 ```
 
 ## 기본 작업 흐름
+
+# Chapter 5. Models and Databases
+
+```python
+from django.db import models
+
+class Category(models.Model):
+    name = models.CharField(max_length=128, unique=True)
+
+    def __str__(self):
+        return self.name
+
+
+class page(models.Model):
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    title = models.CharField(max_length=128)
+    url = models.URLField()
+    views = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.title
+```
+
+- Database의 테이블을 생성하기 위해 모델을 생성한다.
+- 각 클래스는 django.db.models를 상속받아서 사용한다.
+- **str**()는 모델의 이름을 정의하기 위한 함수이다. 정의하지 않으면 객체로 이름이 정의되서 나중에 사용하기 번거롭다.
+
+<br>
+
+```python
+# 데이터베이스를 생성하기 위한 명령어
+# 프로젝트 루트의 manage.py가 있는곳에서 실행해야됨
+python manage.py migrate
+```
