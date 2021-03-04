@@ -207,4 +207,60 @@ class page(models.Model):
 # 데이터베이스를 생성하기 위한 명령어
 # 프로젝트 루트의 manage.py가 있는곳에서 실행해야됨
 python manage.py migrate
+
+
+
+# 데이터베이스를 생성한 뒤 슈퍼유저를 생성하기위해 커맨드 입력
+python manage.py createsuperuser
+
+
+
+# App 모델을 변경할 때마다 django에게 변경사항을 알려줘야됨
+python manage.py makemigrations rango
+
+
+
+# 앱에대한 마이그레이션을 만든 후에 해당 마이그레이션을 데이터베이스에 커밋해야됨
+# 다시한번 migrate
+python manage.py migrate
+```
+
+- makemigrations 까지 완료하면 rango/migrations 디텍토리에 0001_initial.py 파일이 생기는데 데이터베이스 스키마를 생성하는데 필요한 사항을 전부 저장해둔다.
+
+- 변경된 데이터베이스의 기본 sql 확인하는 커맨드
+
+```python
+python manage.py sqlmigrate rango 0001
+```
+
+<br>
+<br>
+
+## 5.6 Configuring the Admin Interface
+
+```python
+# rango/admin.py
+
+from django.contrib import admin
+from rango.models import Category, Page
+
+admin.site.register(Category)
+admin.site.register(Page)
+```
+
+- admin 인터페이스를 구현하기 위해 전에 model로 만들었던 Category 모델과 Page 모델을 admin.site.register() 메소드를 이용하여 등록한다.
+- admin 인터페이스를 이용하여 데이터가 올바르게 저장되었는지 확인할 수 있다.
+
+<br>
+
+```python
+class Category(models.Model):
+    name = models.CharField(max_length=128, unique=True)
+
+    # 어드민에서의 복수이름을 Categorys를 Categories로 변경할 수 있다.
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+    def __str__(self):
+        return self.name
 ```
