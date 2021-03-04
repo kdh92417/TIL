@@ -20,5 +20,5 @@ LeetCode 문제 풀이하여 정리하여두는 공간입니다.
 
 Python으로 프로그램이나 여러가지 개념들을 구현해봅니다.
 
-- [씨리얼 넘버 생성 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/Try_implementing_with_Python/create_serial.md)
-- [점수를 입력받아 등급과 학점 평균 산출 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/grade_average_calculator.md)
+- [씨리얼 넘버 생성 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/create_serial.py)
+- [점수를 입력받아 등급과 학점 평균 산출 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/grade_average_calculator.py)
