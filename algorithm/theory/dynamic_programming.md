@@ -8,12 +8,23 @@
 
 - 중복되는 계산은 한번만 계산 해두어 저장
 - 비효율성을 해결하는 알고리즘
+- Top-down Approach(하향식 접근)
+- 위에서부터 내려오기 때문에 필요한 값만 계산하여 불필요한 계산을 하지 않는다.
+- 콜스택이 쌓여 성능에 부하가 걸릴 위험이 있다.
+
+## Tabulation
+
+- Bottom-up Approach(상향식 접근)
+- Table 방식으로 정리
+- Memorization이 재귀라면 Tabulation은 반복문
+- 처음부터 값을 계산하기 때문에 불 필요한 계산도 함
+- 반복문으로 돌려서 성능에 부하는 없음
 
 <br>
 
 ## 문제
 
-피보나치 수열을 Memorization 방식으로 알고리즘 구현하는 문제입니다.
+### 피보나치 수열을 Memorization 방식으로 알고리즘 구현하는 문제입니다.
 
 ```python
 def fib_memo(n, cache):
@@ -47,3 +58,30 @@ Out Put
 354224848179261915075
 '''
 ```
+
+<br>
+
+### 피보나치 수열을 Tabulation 방식으로 알고리즘 구현하는 문제입니다.
+
+```python
+def fib_optimized(n):
+    # Tabulation을 위한 변수설정
+    cur = 1
+    pre = 0
+
+    # Tabulation 방식으로 메모리가 cur과 pre만 계속 update 함으로써 공간복잡도 O(1)
+    for i in range(1, n):
+        cur, pre = pre+cur, cur
+    return cur
+
+# 테스트
+print(fib_optimized(16))
+print(fib_optimized(53))
+print(fib_optimized(213))
+
+# 987
+# 53316291173
+# 146178119651438213260386312206974243796773058
+```
+
+모든 값을 계산하고 저장하면 공간을 많이 차지하여 메모리를 많이 차지함 그래서 previous 와 current를 활용하여 공간복잡도 O(1)으로 풀이
