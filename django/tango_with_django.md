@@ -175,6 +175,8 @@ urlpatterns = [
 
 ## 기본 작업 흐름
 
+<br>
+
 # Chapter 5. Models and Databases
 
 ```python
@@ -373,3 +375,56 @@ if __name__ == '__main__':
 ```
 
 실행 : `python population.py`
+
+<br>
+
+# Chapter 6. Models, Templates and Views
+
+## 6.3 Creating a Details Page
+
+- 읽기쉬운 URL을 만들려면 Slug Field를 이용하면 된다.
+- Slug Field는 띄어쓰기된 공백을 `-`으로 채워주는 함수이다.
+- ex) "how do i create a slug in django" -> "how-do-i-create-a-slug-in-django"
+
+- 여백을 사용할 수는 있지만 안전하지 않은 URL이다.
+
+예시
+
+```python
+# rango/models.py
+from django.template.defaultfilters import slugify
+
+class Category(models.Model):
+    name = models.CharField(max_length=128, unique=True)
+    views = models.IntegerField(default=0)
+    likes = models.IntegerField(default=0)
+    slug = models.SlugField(Unique=True) # 똑같은 이름을 받지 않음
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super(Category, self).save(*args, **kwargs)
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+    def __str__(self):
+        return self.name
+```
+
+```python
+# rango/admin.py
+
+from django.contrib import admin
+from rango.models import Category, Page
+
+
+class PageAdmin(admin.ModelAdmin):
+    list_display = ('title', 'category', 'url')
+
+# 슬러그이름이 자동으로 설정
+class CategoryAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug' : ('name',)}
+
+admin.site.register(Page, PageAdmin)
+admin.site.register(Category, CategoryAdmin) # 어드민에 등록
+```
