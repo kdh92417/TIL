@@ -76,3 +76,37 @@ print(min_fee([3, 2, 1]))
 
 - 이므로 최적부분구조를 가지고있다.
 - 따라서 Greedy Algorithm 으로 풀면 최적의 솔루션으로 풀 수 있다.
+
+<br>
+
+### 문제
+
+- 학교 수업 시작교시와 끝나는 교시를 담은 튜플이 리스트로 입력받는다. 이럴 때 학생이 수업을 겹치지 않고 가장 많이 들을 수 있는 교시의 리스트를 리턴하는 문제이다.
+
+```python
+def course_selection(course_list):
+    # 수업을 끝나는 순서로 정렬
+    sorted_list = sorted(course_list, key= lambda x : x[1])
+
+    # 정렬한 리스트의 첫번째를 무조건 듣는다.
+    result = [sorted_list[0]]
+
+    # 매회 끝나는 교시보다 클 때 즉 수업이 겹치지 않는 것을 고른다. (가장 빨리 끝나는 것 중)
+    for course in sorted_list:
+        if course[0] > result[-1][1]:
+            result.append(course)
+
+    return result
+
+# 테스트
+print(course_selection([(6, 10), (2, 3), (4, 5), (1, 7), (6, 8), (9, 10)]))
+print(course_selection([(1, 2), (3, 4), (0, 6), (5, 7), (8, 9), (5, 9)]))
+print(course_selection([(4, 7), (2, 5), (1, 3), (8, 10), (5, 9), (2, 5), (13, 16), (9, 11), (1, 8)]))
+```
+
+- 가장 먼저 가장 빨리 시작하고 가장 먼저 끝나는 교시를 매번 선택하면 최대로 수업을 많이 들을 수가 있다. 그러므로 탐욕속성이 있다.
+
+- 또한 밑의 그림과 같이 다섯 경우로 나누어 최적의 경우를 선택하면 기존 문제의 최적의 답을 구할 수 있어서 최적부분구조가 있다.
+  ![최적부분구조](https://i.imgur.com/EtveUIC.jpg)
+
+- 그러므로 이문제는 Greedy로 풀면 최적의 솔루션으로 풀 수 있다.
