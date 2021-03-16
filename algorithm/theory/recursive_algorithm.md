@@ -49,3 +49,87 @@ def triangle_number(n):
 for i in range(1, 11):
     print(triangle_number(i))
 ```
+
+<br>
+
+### n의 각 자릿수의 합을 리턴해주는 재귀함수를 구현
+
+```python
+# n의 각 자릿수의 합을 리턴
+def sum_digits(n):
+    # Base Case
+    if n < 10:
+        return n
+
+    # Recursive Case
+    else:
+        return (n % 10) + sum_digits(n // 10)
+
+# 코드를 작성하세요.
+
+
+# 테스트
+print(sum_digits(22541))    # 14
+print(sum_digits(92130))    # 15
+print(sum_digits(12634))    # 16
+print(sum_digits(704))      # 11
+print(sum_digits(3755))     # 20
+```
+
+<br>
+
+### 입력받은 리스트를 뒤집힌 리스트로 리턴 하는 것을 재귀함수로 구현
+
+```python
+# 파라미터 some_list를 거꾸로 뒤집는 함수
+def flip(some_list):
+    # Base Case
+    if len(some_list) < 2:
+        return some_list
+
+    # Recursive Case
+    else:
+        return [some_list[-1]] + flip(some_list[:-1])
+
+# 테스트
+some_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+some_list = flip(some_list)
+print(some_list)
+```
+
+<br>
+
+### 이진탐색 재귀함수로 구현
+
+```python
+def binary_search(element, some_list, start_index=0, end_index=None):
+    # end_index가 따로 주어지지 않은 경우에는 리스트의 마지막 인덱스
+    if end_index == None:
+        end_index = len(some_list) - 1
+
+    # Base Case 1
+    if start_index > end_index:
+        return None
+
+    mid_idx = (start_index + end_index) // 2
+
+    # Base Case 2
+    if some_list[mid_idx] == element:
+        return mid_idx
+
+    # Recursive Case
+    elif some_list[mid_idx] > element:
+        return binary_search(element, some_list, start_index=start_index, end_index=mid_idx - 1)
+    elif some_list[mid_idx] < element:
+        return binary_search(element, some_list, start_index=mid_idx + 1, end_index=end_index)
+
+    return None
+
+
+
+print(binary_search(2, [2, 3, 5, 7, 11]))   # 0
+print(binary_search(0, [2, 3, 5, 7, 11]))   # None
+print(binary_search(5, [2, 3, 5, 7, 11]))   # 2
+print(binary_search(3, [2, 3, 5, 7, 11]))   # 1
+print(binary_search(11, [2, 3, 5, 7, 11]))  # 4
+```
