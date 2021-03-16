@@ -13,7 +13,7 @@
   - [code](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/solve.py)
 - [user_agent](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/user_agent_statistics.png) : OS 별 접속자 수 통계 with user_agent
 
-  - [code](hhttps://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/user_agent.py)
+  - [code_user_agent](hhttps://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/user_agent.py)
 
 - [output.csv](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/output.csv) : log 파일을 apache 형식에 맞게 csv 파일로 파싱
 - [partially.csv](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/partially.csv) : IP주소, URI, Status Code 만 csv파일로 파싱
