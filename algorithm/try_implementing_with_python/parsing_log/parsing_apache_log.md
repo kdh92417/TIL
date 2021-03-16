@@ -11,7 +11,7 @@
 - [parser.py](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/parser.py) : apache.txt 를 전부 또는 일부분을 csv파일로 parsing
 - [ip_address_and_200status_code](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/ip_address_and_200status_code.png) : status code 200 응답률과 특정 아이피주소가 접속한 횟수
   - [code](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/solve.py)
-- [user_agent](user_agent_statistics.png) : OS 별 접속자 수 통계 with user_agent
+- [user_agent](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/user_agent_statistics.png) : OS 별 접속자 수 통계 with user_agent
 
   - [code](hhttps://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/user_agent.py)
 
