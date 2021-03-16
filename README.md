@@ -62,7 +62,7 @@
 
 - [주민번호 정규표현식으로 마킹하여 출력하기](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/marking_number.py)
 
-- [Apache Log 파일을 CSV 파일로 Parsing](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_apache_log.py)
+- [Apache Log 파일을 CSV 파일로 Parsing](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/parsing_apache_log.md)
 
 ### 조사해본 개념들
 
