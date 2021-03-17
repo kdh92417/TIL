@@ -133,3 +133,34 @@ print(binary_search(5, [2, 3, 5, 7, 11]))   # 2
 print(binary_search(3, [2, 3, 5, 7, 11]))   # 1
 print(binary_search(11, [2, 3, 5, 7, 11]))  # 4
 ```
+
+<br>
+
+### 하노이의 탑 재귀로 구현
+
+```python
+def move_disk(disk_num, start_peg, end_peg):
+    print("%d번 원판을 %d번 기둥에서 %d번 기둥으로 이동" % (disk_num, start_peg, end_peg))
+
+def hanoi(num_disks, start_peg, end_peg):
+    # Base Case
+    if num_disks == 0:
+        return
+
+    # Recursive Case
+    else:
+        # 경유하는 기둥
+        pass_peg = 6 - (start_peg + end_peg)
+
+        # 가장 큰 원판을 제외하고 나머지 원판들을 start_peg에서 pass_peg로 이동
+        hanoi(num_disks - 1, start_peg, pass_peg)
+
+        # 가장 큰 원판을 start_peg에서 end_peg로 이동
+        move_disk(num_disks, start_peg, end_peg)
+
+        # 나머지 원판들을 pass_peg에서 end_peg로 이동
+        hanoi(num_disks - 1, pass_peg, end_peg)
+
+# 테스트 코드
+hanoi(4, 1, 3)
+```

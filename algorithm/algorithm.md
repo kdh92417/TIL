@@ -9,6 +9,12 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [Dynamic Programming](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/dynamic_programming.md)
 
+- [Binary Search](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/binary_search)
+
+- [Greedy Algorithm](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/greedy_algorithm)
+
+- [Recursive Algorithm](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/recursive_algorithm.md)
+
 ## LeetCode 문제풀이
 
 LeetCode 문제 풀이하여 정리하여두는 공간입니다.
