@@ -84,3 +84,9 @@ class FlavorFrom(forms.ModelForm):
     class Meta:
         model = Flavor
 ```
+
+### 12.6 입력된 데이터의 유효성을 검사를 위해 FlavorForm을 이용
+```python
+
+
+```
