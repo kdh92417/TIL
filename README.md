@@ -64,6 +64,8 @@
 
 - [Apache Log 파일을 CSV 파일로 Parsing](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/parsing_apache_log.md)
 
+- [서버 구축 및 Ajax를 이용한 데이터 통신](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/programmers/readme.md)
+
 ### 조사해본 개념들
 
 - [개념 정리](https://github.com/kdh92417/TIL/blob/master/data/unknown_theory.md)
