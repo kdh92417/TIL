@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>프로그래머스</title>
+  <link
+    href="https://programmers.co.kr/assets/icons/favicon-40b78633b6556a68c3da8e2125c31512fbd01d09906ab76c8a8ff289e494cadb.png"
+    rel="shortcut icon" width="41px" />
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <script src="https://kit.fontawesome.com/067c63d6c2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="nav-menu">
+    <div class="nav-menu__logo">
+      <img src="{% static 'image/programmers_logo.png' %}" alt="" />
+    </div>
+    <div class="nav-menu__list center">
+      <ul>
+        <li><a href="#">탑프로그래머스</a></li>
+        <li><a href="#">실력 체크</a></li>
+        <li><a href="recruit">개발자 채용</a></li>
+        <li><a href="#">테크 피드</a></li>
+        <li>|</li>
+        <li><a href="#">코딩테스트 연습</a></li>
+        <li><a href="#">프로그래밍 강의</a></li>
+      </ul>
+    </div>
+    <div class="nav-menu__list">
+      <ul>
+        <li><a href="#">계정 만들기</a></li>
+        <li><a href="login">로그인</a></li>
+        <li><a href="#">기업 회원</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="header-main">
+    <div class="header-main__description">
+      <p class="header-main__description-intro">
+        기술 중심 개발자 채용 플랫폼
+      </p>
+      <p class="header-main__description-title">
+        개발자 채용의 끝은,<br />
+        결국 코드니까
+      </p>
+      <p class="header-main__description-sub">
+        이력서보다, 당신의 코드가 우선시되는<br />
+        프로그래머스만의 채용 프로그램을 만나보세요.
+      </p>
+      <a class="blue-btn" href="#">시작하기</a>
+    </div>
+    <div class="header-main__image">
+      <img src="{% static 'image/developer.png' %}" alt="" />
+    </div>
+  </header>
+  <section class="section">
+    <article class="section__program">
+      <div class="section__program-title">
+        <h4 class="sub-title">채용 프로그램</h4>
+        <i class="fas fa-question-circle"></i>
+        <a class="btn" href="#">더보기</a>
+      </div>
+      <div class="section__program-event">
+        <div class="section__program-event-section left">
+          <div class="section__program-event-banner">
+            <div class="dev"></div>
+          </div>
+          <div class="section__program-event-description">
+            <h4 class="title">
+              카카오커머스 개발자 영입 - 프론트엔드 개발 챌린지
+            </h4>
+            <ul class="period">
+              <li>접수 : 21년 01월 04일 11:00 - 01월 22일 17:00</li>
+              <li>테스트 : 21년 01월 23일 14:00 - 01월 30일 17:10</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section__program-event-section right">
+          <div class="section__program-event-banner">
+            <div class="kakao"></div>
+          </div>
+          <div class="section__program-event-description">
+            <h4 class="title">
+              2021 Dev-Matching: 웹 프론트엔드 개발자(상반기)
+            </h4>
+            <ul class="period">
+              <li>접수 : 21년 02월 15일 11:00 - 03월 05일 17:00</li>
+              <li>테스트 : 21년 03월 06일 13:00 - 03월 06일 16:00</li>
+            </ul>
+            <i class="icon fab fa-js-square"></i>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="section__position">
+      <div class="section__position-title">
+        <h4>채용 중인 포지션</h4>
+        <a class="btn" href="#">포지션 더보기</a>
+      </div>
+
+      <div class="section__position-tags">
+        <ul>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">Spring</a></li>
+          <li><a href="#">Node.js</a></li>
+          <li><a href="#">Django</a></li>
+          <li><a href="#">ReactJS</a></li>
+          <li><a href="#">Vue.js</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Kotlin</a></li>
+          <li><a href="#">C++</a></li>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">서버/백엔드</a></li>
+          <li><a href="#">프론트엔드</a></li>
+          <li><a href="#">웹 풀스택</a></li>
+          <li><a href="#">안드로이드 앱</a></li>
+          <li><a href="#">아이폰 앱</a></li>
+        </ul>
+      </div>
+
+      <div class="section__position-company">
+        <div class="section__position-company-block">
+          <div class="section__position-company-block-sector">
+            <div class="company__logo">
+              <img src="{% static 'image/company_logo.png' %}" alt="" />
+            </div>
+            <div class="company__description">
+              <h5>Backend 개발자</h5>
+              <h6>에이아이트릭스</h6>
+              <ul>
+                <li>서버/백엔드</li>
+                <li>웹 풀스택</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section__position-company-block-sector">
+            <div class="company__logo">
+              <img src="{% static 'image/company_logo.png' %}" alt="" />
+            </div>
+            <div class="company__description">
+              <h5>Backend 개발자</h5>
+              <h6>에이아이트릭스</h6>
+              <ul>
+                <li>서버/백엔드</li>
+                <li>웹 풀스택</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__position-company-block">
+          <div class="section__position-company-block-sector">
+            <div class="company__logo">
+              <img src="{% static 'image/company_logo.png' %}" alt="" />
+            </div>
+            <div class="company__description">
+              <h5>Backend 개발자</h5>
+              <h6>에이아이트릭스</h6>
+              <ul>
+                <li>서버/백엔드</li>
+                <li>웹 풀스택</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section__position-company-block-sector">
+            <div class="company__logo">
+              <img src="{% static 'image/company_logo.png' %}" alt="" />
+            </div>
+            <div class="company__description">
+              <h5>Backend 개발자</h5>
+              <h6>에이아이트릭스</h6>
+              <ul>
+                <li>서버/백엔드</li>
+                <li>웹 풀스택</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__position-company-block">
+          <div class="section__position-company-block-sector">
+            <div class="company__logo">
+              <img src="{% static 'image/company_logo.png' %}" alt="" />
+            </div>
+            <div class="company__description">
+              <h5>Backend 개발자</h5>
+              <h6>에이아이트릭스</h6>
+              <ul>
+                <li>서버/백엔드</li>
+                <li>웹 풀스택</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section__position-company-block-sector">
+            <div class="company__logo">
+              <img src="{% static 'image/company_logo.png' %}" alt="" />
+            </div>
+            <div class="company__description">
+              <h5>Backend 개발자</h5>
+              <h6>에이아이트릭스</h6>
+              <ul>
+                <li>서버/백엔드</li>
+                <li>웹 풀스택</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section__position-company-block">
+          <div class="section__position-company-block-sector">
+            <div class="company__logo">
+              <img src="{% static 'image/company_logo.png' %}" alt="" />
+            </div>
+            <div class="company__description">
+              <h5>Backend 개발자</h5>
+              <h6>에이아이트릭스</h6>
+              <ul>
+                <li>서버/백엔드</li>
+                <li>웹 풀스택</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section__position-company-block-sector">
+            <div class="company__logo">
+              <img src="{% static 'image/company_logo.png' %}" alt="" />
+            </div>
+            <div class="company__description">
+              <h5>Backend 개발자</h5>
+              <h6>에이아이트릭스</h6>
+              <ul>
+                <li>서버/백엔드</li>
+                <li>웹 풀스택</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="section__banner">
+      <div class="banner-container">
+        <div class="section__banner-left">
+          <div class="section__banner-image">
+            <img src="{% static 'image/office.png' %}" alt="" />
+          </div>
+          <div class="section__banner-title">
+            <h6>나에게 꼭 맞는 채용 기회</h6>
+            <p>
+              개발자를 위한 다양한 필터 옵션으로 <b>나를 위한 포지션</b>을
+              찾아보세요.
+            </p>
+          </div>
+        </div>
+
+        <div class="section__banner-button">
+          <a class="blue-btn" href="#">포지션 더보기</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="title__container">
+      <article class="code__title">
+        <h2>우리의 관심은, 당신의 <span>코드</span></h2>
+        <h4 class="code__title-sub">
+          프로그래머스는 당신이 더 나은 코드를 쓸 수 있도록, 이렇게
+          도와드립니다.
+        </h4>
+      </article>
+      <article class="code__help">
+        <div class="code__help-text">
+          <ul>
+            <li>
+              <h4>코드에 집중하는 채용 프로그램</h4>
+              <p>
+                오직 프로그래머스에서만 운영하는 데브매칭, 챌린지를 통해 각종
+                기업의 채용문을 두드려볼 수 있습니다. 이력서가 부실해도,
+                코딩테스트에 취약해도, 쌓아온 역량을 마음껏 발휘해 원하는
+                기업의 문을 두드릴 수 있는 기회를 제공합니다.
+              </p>
+            </li>
+            <li>
+              <h4>실전을 위한 트레이닝 시스템</h4>
+              <p>
+                수많은 기업과의 코딩테스트 운영 경험이 그대로 녹아있는
+                ‘코딩테스트 연습’ 기능, 챌린지나 데브매칭에 실제로 출제되었던
+                직무별 과제를 풀어보는 ‘과제관' (출시 예정)을 통해 실전 감각을
+                익히도록 도와드립니다.
+              </p>
+            </li>
+            <li>
+              <h4>코드리뷰 중심의 교육과정</h4>
+              <p>
+                각종 실무 주제를 토대로 운영되는 프로그래머스의 온라인
+                스터디는 일반 강의 포맷을 벗어나, 코드리뷰에 중심을 두고
+                있습니다. 상호 피드백을 통한 코드의 개선에 집중하는 이 과정은
+                당신이 결과적으로 더 나은 코드를 작성하도록 이끕니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="code__help-picture">
+          <img src="{% static 'image/page.png' %}" alt="" />
+        </div>
+      </article>
+      <article class="code__sub">
+        <h2>국내 <span>700개</span> 이상의 기업이</h2>
+        <h2>프로그래머스를 통해 당신을 기다립니다.</h2>
+      </article>
+      <article class="code__table">
+        <ul>
+          <li>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_1.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_2.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_3.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_4.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_5.png' %}" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_1.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_2.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_3.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_4.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_5.png' %}" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_1.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_2.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_3.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_4.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_5.png' %}" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_1.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_2.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_3.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_4.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_5.png' %}" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_1.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_2.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_3.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_4.png' %}" alt="" />
+            </div>
+            <div class="code__table-image">
+              <img src="{% static 'image/logo_5.png' %}" alt="" />
+            </div>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+  <footer>
+    <div class="recruit">
+      <div class="footer__recruit">
+        <div class="footer__recruit-text">
+          <p>JOIN OUR TEAM</p>
+          <h5>
+            프로그래머스에 합류해 개발자 채용 문화의 혁신을 이끌어나가는
+            에너지의 주체가 되어보세요!
+          </h5>
+        </div>
+        <div class="footer__recruit-link">
+          <a class="blue-btn" href="#">인재 채용</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__main">
+      <div class="main">
+        <div class="main__top">
+          <h6>2021 프로그래머스</h6>
+          <ul>
+            <li>개발자용 프로그래머스</li>
+            <li>기업용 프로그래머스</li>
+            <li>프로그래머스 스쿨</li>
+            <li>개인정보 처리방침</li>
+            <li>이용약관</li>
+            <li>FAQ/문의</li>
+          </ul>
+        </div>
+        <div class="main__container">
+          <p>
+            (주)그렙 / 공동대표 이확영, 임성수 / 서울특별시 강남구 테헤란로
+            151, 510호, 526호(역삼동, 역삼하이츠빌딩) / 사업자등록번호
+            220-88-75699 /통신판매업신고 제 2014-서울강남-03241호 /
+            직업정보제공사업 신고번호 J1200020180027 /<br />
+            유료직업소개사업 등록번호(국내)제2019-3220237-14-5-00020호
+          </p>
+          <ul>
+            <li>☎ 기업 서비스 ─ 02.539.1886</li>
+            <li>☎ 교육 내용 관련 문의 ─ 02.539.1885</li>
+            <li>☎ 교육 결제, 환불 관련 문의 - 문의하기</li>
+            <li>☎ 제휴 및 서비스 운영, 기타 문의 ─ 02.539.1882</li>
+            <li>☎ 코딩 테스트(응시자) 문의 - 문의하기</li>
+          </ul>
+          <p>
+            문의하기 운영시간: 오전 9시 ~ 오후 6시 (주말 및 공휴일 휴무)<br />
+            점심시간: 오후 12시 ~ 오후 1시
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

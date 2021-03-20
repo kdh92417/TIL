@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 99vw;
+            height: 99vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            padding: 5px;
+            margin: 10px;
+            width: 200px;
+            height: 50px;
+        }
+
+        button {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <form action="" id="loginForm" method="post">
+        <input type="text" placeholder="ID" name="login_id" id="id_name">
+        <input type="text" placeholder="PASSWORD" id="paswd" name="password">
+        <button type="" form="loginForm" id="form_button">로그인</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        let btnAjax = document.querySelector('#form_button');
+        btnAjax.addEventListener('click', e => {
+            let paswd = document.querySelector('#paswd').value;
+            let name = document.querySelector('#id_name').value;
+
+            let param = {
+                'id': name,
+                'paswd': paswd,
+            }
+            $.ajax({
+                url: "{% url 'test' %}",
+                type: 'POST',
+                data: JSON.stringify(param),
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function () {
+                    alert('No No');
+                }
+            })
+        });
+
+
+
+
+        // $('#form_button').click(function () {
+        // var id_name = $('#id').val()
+        // var passwd = $('#paswd').val()
+        // $.ajax({
+        // url: 'main/login',
+        // data: {
+        // 'id': id_name,
+        // 'pwd': passwd
+        // },
+        // success: function () {
+        // console.log('success');
+        // }
+        // })
+        // })
+    </script>
+</body>
+
+</html>

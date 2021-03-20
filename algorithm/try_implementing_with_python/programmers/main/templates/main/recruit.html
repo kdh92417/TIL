@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="GET" id="form_tag" name="form_tag">
+        <input type="text" placeholder="기술 태그 검색" id="search">
+        <button type="" form="form_tag" id="form_button">검색</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        let btnAjax = document.querySelector('#form_tag');
+        btnAjax.addEventListener('click', e => {
+            let tag = document.querySelector('#search').value;
+
+            let param = {
+                'tag': tag,
+            }
+            $.ajax({
+                url: "{% url 'recruit' %}",
+                type: 'GET',
+                data: JSON.stringify(param),
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function () {
+                    alert('No No');
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

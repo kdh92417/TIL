@@ -1,0 +1,61 @@
+/* 부족한 점 --------- */
+/*
+    1. menu-list가 정중앙으로 오지않고, 세로상으로 중앙으로 정렬이 되지 않음
+*/
+/* ----------------- */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    padding: 0px 6px;
+    background-color: #000;
+    color: #B2C0CC;
+}
+
+/* 로고  */
+.nav-menu__logo img {
+    width: 182px;
+    height: 34px;
+}
+
+
+/* 메뉴 리스트 */
+.nav-menu__list ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-menu .center {
+    margin-left: 80px;
+}
+
+.nav-menu__list li {
+    padding: 0px 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-menu__list li:nth-child(5) {
+    font-size: 11px;
+    font-weight: bolder;
+    display: flex;
+    color: #B2C0CC;
+}
+
+.nav-menu__list li a:visited,
+.nav-menu__list li a:link {
+    text-decoration: none;
+    color: #B2C0CC;
+}
+
+.nav-menu__list li a:hover,
+.nav-menu__list li a:active {
+    color: white;
+}
+
+/* my page */
+.nav-menu__my-menu {
+    margin-right: 13px;
+}

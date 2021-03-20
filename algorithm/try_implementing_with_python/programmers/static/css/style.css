@@ -1,0 +1,26 @@
+/* pages */
+@import "nav.css";
+@import "header.css";
+@import "section_program.css";
+@import "section_position.css";
+@import "section_banner.css";
+@import "section_code.css";
+@import "footer.css";
+
+/* 재생가능 모듈 */
+@import "components.css";
+
+/* variables */
+@import "variables.css";
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+nav,
+header,
+section {
+    padding: 0 370px;
+}

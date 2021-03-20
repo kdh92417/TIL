@@ -1,0 +1,42 @@
+.header-main {
+    height: 446px;
+    display: flex;
+    background-color: black;
+    padding: 3.5rem 0 2.5rem 0;
+    justify-content: center;
+    color: white;
+}
+
+.header-main__description {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 600px;
+}
+
+.header-main__image img {
+    height: 350px;
+}
+
+.header-main__description-intro {
+    color: #0078FF;
+    margin-bottom: 16px;
+}
+
+.header-main__description-title {
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+.header-main__description-sub {
+    margin: 50px 0px 32px 0px;
+    font-size: 20px;
+    color: #E9ECF3;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.header-main a {
+    width: 210px;
+}

@@ -1,0 +1,81 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__program {
+    display: flex;
+    flex-direction: column;
+    height: 463px;
+    margin-top: 80px;
+}
+
+.section__program-title {
+    color: #263747;
+    display: flex;
+    align-items: center;
+    font-size: var(--sub-title);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.section__program-title i {
+    margin: 0 10px;
+}
+
+
+
+.section__program-event {
+    display: flex;
+    margin-left: 5px;
+}
+
+.section__program-event .right {
+    margin-left: 34px;
+}
+
+.section__program-event-section {
+    width: 565px;
+    border: var(--box-border);
+    border-radius: 10px;
+}
+
+.section__program-event-banner div {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+}
+
+.dev {
+    background-image: url(../image/kakao.jpg);
+}
+
+.kakao {
+    background-image: url(../image/dev_matching.png);
+}
+
+.section__program-event-description {
+    padding: 16px;
+    line-height: 1.6;
+    letter-spacing: -0.009em;
+    overflow: hidden;
+}
+
+.section__program-event-description h4 {
+    font-size: 20px;
+    color: #263747;
+}
+
+.section__program-event-description ul {
+    padding-top: 1rem;
+    list-style: none;
+    font-size: 14px;
+    color: inherit;
+    font-weight: 400;
+    opacity: 0.7;
+    line-height: 2;
+    margin-bottom: 22px;
+}
