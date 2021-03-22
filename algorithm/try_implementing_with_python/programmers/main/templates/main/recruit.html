@@ -11,28 +11,22 @@
 </head>
 
 <body>
-    <form action="" method="GET" id="form_tag" name="form_tag">
-        <input type="text" placeholder="기술 태그 검색" id="search">
-        <button type="" form="form_tag" id="form_button">검색</button>
-    </form>
+    <input type="text" placeholder="기술 태그 검색" id="search">
+    <button type="" id="form_button">검색</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script>
-        let btnAjax = document.querySelector('#form_tag');
+        let btnAjax = document.querySelector('#form_button');
         btnAjax.addEventListener('click', e => {
-            let tag = document.querySelector('#search').value;
-
-            let param = {
-                'tag': tag,
-            }
+            var tag = document.querySelector('#search').value;
             $.ajax({
-                url: "{% url 'recruit' %}",
+                url: "{% url 'search' %}",
                 type: 'GET',
-                data: JSON.stringify(param),
+                data: { 'tag' : tag },
                 success: function (data) {
                     console.log(data);
                 },
                 error: function () {
-                    alert('No No');
+                    alert(tag);
                 }
             })
         });
