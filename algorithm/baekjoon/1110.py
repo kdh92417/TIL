@@ -11,6 +11,7 @@ count = 0
 while True:
     if (n < 0) or (n > 99):
         print(0)
+        
         break
 
     first_num = n // 10
