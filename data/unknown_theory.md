@@ -5,3 +5,4 @@
 - [SOLID 설계법칙](https://github.com/kdh92417/TIL/blob/master/data/solid.md)
 - [여러가지패턴과 Iterator](<https://github.com/kdh92417/TIL/blob/master/data/mvp_and_iterator().md>)
 - [Garbage Collection in Python](https://github.com/kdh92417/TIL/blob/master/data/garbage_collection.md)
+- [Ajax 개념 및 사용법](https://github.com/kdh92417/TIL/blob/master/data/ajax.md)
