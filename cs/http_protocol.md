@@ -32,7 +32,8 @@
 
 > 각각의 개별적인 요청들은 서버로 보내지며, 서버는 요청을 처리하고 response라고 불리는 응답을 제공하고, 이 요청과 응답 사이에는 여러 개체들이 있다. 예를 들면 다양한 작업을 수행하는 게이트웨이 또는 캐시 역할을 하는 프록시등이 있다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d376ea6d-49c9-40ab-82da-017efac751f9/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d376ea6d-49c9-40ab-82da-017efac751f9/Untitled.png)
+![proxy](https://user-images.githubusercontent.com/58774316/112080451-61c43980-8bc5-11eb-8405-965ba58b35f4.png)
+
 
 실제로는 브라우저와 요청을 처리하는 서버 사이에는 좀 더 많은 컴퓨터들이 존재합니다.(라우터, 모뎀 등)
 
@@ -153,7 +154,8 @@ Hello World! My payload includes a trailing CRLF.	// 바디
 - Request 헤더: [User-Agent (en-US)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent), `[Accept-Type](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Accept-Type)`와 같은 헤더는 요청의 내용을 좀 더 구체화 시키고(`[Accept-Language](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Accept-Language)`), 컨텍스를 제공하기도 하며(`[Referer](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Referer)`), 조건에 따른 제약 사항을 가하기도 하면서(`[If-None](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/If-None)`) 요청 내용을 수정합니다.
 - Entity 헤더: `[Content-Length](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Length)`와 같은 헤더는 요청 본문에 적용됩니다. 당연히 요청 내에 본문이 없는 경우 entity 헤더는 전송되지 않습니다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4341e935-777e-4a19-ae7e-32e936836fd2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4341e935-777e-4a19-ae7e-32e936836fd2/Untitled.png)
+![request_header](https://user-images.githubusercontent.com/58774316/112080484-70aaec00-8bc5-11eb-9545-3b7f607e2ade.png)
+
 
 ### HTTP Response header
 
@@ -161,7 +163,8 @@ Hello World! My payload includes a trailing CRLF.	// 바디
 - Response 헤더: `[Vary](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Vary)`와 `[Accept-Ranges](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Accept-Ranges)`와 같은 헤더는 상태 줄에 미처 들어가지 못했던 서버에 대한 추가 정보를 제공합니다.
 - Entity 헤더: `[Content-Length](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Length)`와 같은 헤더는 요청 본문에 적용됩니다. 당연히 요청 내에 본문이 없는 경우 entity 헤더는 전송되지 않습니다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70e97721-53b1-463d-a4c2-c79384934dd3/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70e97721-53b1-463d-a4c2-c79384934dd3/Untitled.png)
+![response_header](https://user-images.githubusercontent.com/58774316/112080506-76a0cd00-8bc5-11eb-8aee-8229abb0b108.png)
+
 
 ### 공통 헤더
 
