@@ -40,3 +40,5 @@ LeetCode 문제 풀이하여 정리하여두는 공간입니다.
 백준 사이트에 있는 문제를 풀고, 정리
 
 - [1110. 더하기 사이클](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1110.py)
+
+- [2675. 문자열 반복](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/2675.py)
