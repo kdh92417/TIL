@@ -21,6 +21,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [Divide And Conquer](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/divide_and_conquer.md)
 
+- [Merge Sort](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/merge_sort.md)
+
 <br>
 
 ## LeetCode 문제풀이
