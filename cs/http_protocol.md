@@ -1,13 +1,13 @@
 # HTTP 프로토콜 완벽 정리
 
-1. [HTTP 프로토콜 이란?](#-http-프로토콜-이란?)
-2. [HTTP 기반 시스템의 구성 요소](#-http-기반-시스템의-구성-요소)
-3. [HTTP의 기초적인 측면](#-HTTP의-기초적인-측면)
-4. [HTTP 메세지의 구조](#4-http-메세지의-구조)
-5. [HTTP 헤더](#-http-헤더)
-6. [HTTP 처리 방식](#-http-처리-방식)
-7. [HTTP Status Code](#-http-status-code)
-8. [URL](#-url)
+1. [HTTP 프로토콜 이란?](##-http-프로토콜-이란?)
+2. [HTTP 기반 시스템의 구성 요소](##-http-기반-시스템의-구성-요소)
+3. [HTTP의 기초적인 측면](##-HTTP의-기초적인-측면)
+4. [HTTP 메세지의 구조](##-http-메세지의-구조)
+5. [HTTP 헤더](##-http-헤더)
+6. [HTTP 처리 방식](##-http-처리-방식)
+7. [HTTP Status Code](##-http-status-code)
+8. [URL](##-url)
 
 <br>
 
@@ -33,7 +33,6 @@
 > 각각의 개별적인 요청들은 서버로 보내지며, 서버는 요청을 처리하고 response라고 불리는 응답을 제공하고, 이 요청과 응답 사이에는 여러 개체들이 있다. 예를 들면 다양한 작업을 수행하는 게이트웨이 또는 캐시 역할을 하는 프록시등이 있다.
 
 ![proxy](https://user-images.githubusercontent.com/58774316/112080451-61c43980-8bc5-11eb-8405-965ba58b35f4.png)
-
 
 실제로는 브라우저와 요청을 처리하는 서버 사이에는 좀 더 많은 컴퓨터들이 존재합니다.(라우터, 모뎀 등)
 
@@ -156,7 +155,6 @@ Hello World! My payload includes a trailing CRLF.	// 바디
 
 ![request_header](https://user-images.githubusercontent.com/58774316/112080484-70aaec00-8bc5-11eb-9545-3b7f607e2ade.png)
 
-
 ### HTTP Response header
 
 - General 헤더: `[Via](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Via)`와 같은 *헤더는* 메시지 전체에 적용됩니다.
@@ -164,7 +162,6 @@ Hello World! My payload includes a trailing CRLF.	// 바디
 - Entity 헤더: `[Content-Length](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Length)`와 같은 헤더는 요청 본문에 적용됩니다. 당연히 요청 내에 본문이 없는 경우 entity 헤더는 전송되지 않습니다.
 
 ![response_header](https://user-images.githubusercontent.com/58774316/112080506-76a0cd00-8bc5-11eb-8aee-8229abb0b108.png)
-
 
 ### 공통 헤더
 
