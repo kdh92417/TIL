@@ -12,6 +12,11 @@
 
 ## Partition 구현
 
+<img src="https://user-images.githubusercontent.com/58774316/112801288-acedb900-90ab-11eb-983f-643de72dbf9e.png" width=700px>
+
+
+
+### Code
 ```python
 # 두 요소의 위치를 바꿔주는 helper function
 def swap_elements(my_list, index1, index2):
