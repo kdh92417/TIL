@@ -42,9 +42,14 @@
 ### Python
 
 - [기본 개념](https://github.com/kdh92417/TIL/blob/master/python/basic_theory_in_python.md)
+
 - [Logical operator](https://github.com/kdh92417/TIL/blob/master/python/logical_operator.md)
+
 - [string formatting](https://github.com/kdh92417/TIL/blob/master/python/string_formatting.md)
+
 - [Optional Parameter](https://github.com/kdh92417/TIL/blob/master/python/optional_parameter.md)
+
+- [객체지향 과 데코레이터](https://github.com/kdh92417/TIL/blob/master/python/dependency)
 
 ### Django
 
