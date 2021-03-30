@@ -39,7 +39,7 @@ LeetCode 문제 풀이하여 정리하여두는 공간입니다.
 
 <br>
 
-# 백준 문제 풀이
+## 백준 문제 풀이
 
 백준 사이트에 있는 문제를 풀고, 정리
 
@@ -48,3 +48,11 @@ LeetCode 문제 풀이하여 정리하여두는 공간입니다.
 - [2675. 문자열 반복](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/2675.py)
 
 - [11729. Top of Hanoi](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/11729.py)
+
+<br>
+
+## Programmers 문제 풀이
+
+프로그래머스 문제 풀이
+
+- [약수의 합](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/약수의합.py)
