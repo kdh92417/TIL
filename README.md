@@ -72,6 +72,8 @@
 
 - [서버 구축 및 Ajax를 이용한 데이터 통신](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/programmers/readme.md)
 
+- [PyGame으로 오목게임 만들기 with OOP](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/omok)
+
 ### 조사해본 개념들
 
 - [개념 정리](https://github.com/kdh92417/TIL/blob/master/data/unknown_theory.md)
