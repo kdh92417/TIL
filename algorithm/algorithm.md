@@ -56,3 +56,5 @@ LeetCode 문제 풀이하여 정리하여두는 공간입니다.
 프로그래머스 문제 풀이
 
 - [약수의 합](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/약수의합.py)
+
+- [프린터](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/프린터.py)
