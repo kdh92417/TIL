@@ -21,3 +21,5 @@
 <br>
 
 ## UML Class diagram
+
+![omok_uml](https://user-images.githubusercontent.com/58774316/113375397-3c47e480-93aa-11eb-98e4-9b4662f0544a.jpg)
