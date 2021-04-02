@@ -19,10 +19,6 @@ class Menu(object):
         top, left = window_height - 30, window_width - 200
         self.new_rect = self.make_text(self.font, 'New Game', blue, None, top - 30, left)
         self.quit_rect = self.make_text(self.font, 'Quit Game', blue, None, top, left)
-        self.show_rect = self.make_text(self.font, 'Hide Number  ', blue, None, top - 60, left)
-        self.undo_rect = self.make_text(self.font, 'Undo', blue, None, top - 150, left)
-        self.uall_rect = self.make_text(self.font, 'Undo All', blue, None, top - 120, left)
-        self.redo_rect = self.make_text(self.font, 'Redo', blue, None, top - 90, left)
 
     def show_msg(self, msg_id):
         msg = {
@@ -44,29 +40,9 @@ class Menu(object):
         self.surface.blit(surf, rect)
         return rect
 
-
-    def show_hide(self, omok):
-        top, left = window_height - 90, window_width - 200
-        if omok.is_show:
-            self.make_text(self.font, 'Show Number', blue, bg_color, top, left)
-            omok.hide_numbers()
-            omok.is_show = False
-        else:
-            self.make_text(self.font, 'Hide Number  ', blue, bg_color, top, left)
-            omok.show_numbers()
-            omok.is_show = True
-
     def check_rect(self, pos, omok):
         if self.new_rect.collidepoint(pos):
             return True
-        elif self.show_rect.collidepoint(pos):
-            self.show_hide(omok)
-        elif self.undo_rect.collidepoint(pos):
-            omok.undo()
-        elif self.uall_rect.collidepoint(pos):
-            omok.undo_all()
-        elif self.redo_rect.collidepoint(pos):
-            omok.redo()
         elif self.quit_rect.collidepoint(pos):
             self.terminate()
         return False

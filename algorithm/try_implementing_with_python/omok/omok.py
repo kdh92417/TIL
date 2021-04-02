@@ -10,7 +10,6 @@ from config import (
     empty,
 )
 
-
 class Omok(object):
     def __init__(self, surface):
         # surface : 화면에 출력할 때 필요한 변수를 class 멤버 변수로 생성
@@ -74,15 +73,11 @@ class Omok(object):
         img = [self.black_img, self.white_img, self.last_b_img, self.last_w_img]
         self.surface.blit(img[img_index], (x, y))
 
-    # 바둑알에 번호를 보여주는 함수
-    def show_number(self, x, y, stone, number):
-        colors = [white, black, red, red]
-        color = colors[stone]
-        # 좌표에서 +15 해주는 이유는 숫자를 중앙정렬 하기 위해서
-        self.menu.make_text(self.font, str(number), color, None, y + 15, x + 15, 1)
+    # 바둑돌을 그리는 함수
+    def draw_stone(self, coord, stone, increase):
+        x, y = self.get_point(coord)
+        self.board[y][x] = stone
 
-    # 바둑알에서 번호를 지워주는 함수
-    def hide_numbers(self):
         for i in range(len(self.coords)):
             x, y = self.coords[i]
             self.draw_image(i % 2, x, y)
@@ -91,78 +86,13 @@ class Omok(object):
             x, y = self.coords[-1]
             self.draw_image(i % 2 + 2, x, y)
 
-    # 바둑알에 번호를 써넣어주는 함수
-    def show_numbers(self):
-        for i in range(len(self.coords)):
-            x, y = self.coords[i]
-            self.show_number(x, y, i % 2, i + 1)
-        # 마지막에 착수한 돌은 이미지를 다시그리고 빨간 글씨로 번호를 넣는다.
-        if self.coords:
-            x, y = self.coords[-1]
-            self.draw_image(i % 2, x, y)
-            self.show_number(x, y, (i % 2) + 2, i + 1)
-
-    # 바둑돌을 그리는 함수
-    def draw_stone(self, coord, stone, increase):
-        x, y = self.get_point(coord)
-        self.board[y][x] = stone
-        self.hide_numbers()
-        if self.is_show:
-            self.show_numbers()
         self.id += increase
         self.turn = 3 - self.turn
-
-    def undo(self):
-        if not self.coords:
-            return
-        self.draw_board()
-        coord = self.coords.pop()
-        self.redos.append(coord)
-        self.draw_stone(coord, empty, -1)
-
-    def undo_all(self):
-        if not self.coords:
-            return
-        self.id = 1
-        self.turn = black_stone
-        while self.coords:
-            coord = self.coords.pop()
-            self.redos.append(coord)
-        self.init_board()
-        self.draw_board()
-
-    def redo(self):
-        if not self.redos:
-            return
-        coord = self.redos.pop()
-        self.coords.append(coord)
-        self.draw_stone(coord, self.turn, 1)
-
-    # 픽셀 좌표를 구하는 함수
-    def set_coords(self):
-        for y in range(board_size):
-            for x in range(board_size):
-                self.pixel_coords.append((x * grid_size + 25, y * grid_size + 25))
-
-    # 마우스 포인트 좌표를 넘겨받아 픽셀 좌표들과 비교하여 마우스 포인트 좌표가 위치한 곳을 찾는 함수
-    def get_coord(self, pos):
-        for coord in self.pixel_coords:
-            x, y = coord
-            rect = pygame.Rect(x, y, grid_size, grid_size)
-            if rect.collidepoint(pos):
-                return coord
-        return None
-
-    # 픽셀 좌표를 board list에 사용될 순서 좌표로 바꿔서 반환
-    def get_point(self, coord):
-        x, y = coord
-        x = (x - 25) // grid_size
-        y = (y - 25) // grid_size
-        return x, y
 
     # 게임 루프가 돌아가는 run_game() 함수에서 마우스가 클릭 되었을 때 호출
     # 화면에서 게임판에서 마우스가 클릭이 되었는지 확인을 위해 get_coord() 함수를 호출하여 확인
     def check_board(self, pos):
+        # get_coord : 화면에서 게임판에 마우스가 클릭이 되었는지 확인
         coord = self.get_coord(pos)
         if not coord:
             return False
@@ -197,3 +127,25 @@ class Omok(object):
             pygame.display.update()
             pygame.time.delay(200)
         self.menu.show_msg(stone)
+
+    # 픽셀 좌표를 구하는 함수
+    def set_coords(self):
+        for y in range(board_size):
+            for x in range(board_size):
+                self.pixel_coords.append((x * grid_size + 25, y * grid_size + 25))
+
+    # 마우스 포인트 좌표를 넘겨받아 픽셀 좌표들과 비교하여 마우스 포인트 좌표가 위치한 곳을 찾는 함수
+    def get_coord(self, pos):
+        for coord in self.pixel_coords:
+            x, y = coord
+            rect = pygame.Rect(x, y, grid_size, grid_size)
+            if rect.collidepoint(pos):
+                return coord
+        return None
+
+    # 픽셀 좌표를 board list에 사용될 순서 좌표로 바꿔서 반환
+    def get_point(self, coord):
+        x, y = coord
+        x = (x - 25) // grid_size
+        y = (y - 25) // grid_size
+        return x, y

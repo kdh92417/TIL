@@ -21,6 +21,7 @@ class Execution:
         # 게임이 계속 진행되도록 다시 시작할 수있도록 하는 코드
         omok = Omok(surface)
         menu = Menu(surface)
+
         while True:
             self.run_game(surface, omok, menu)
             menu.is_continue(omok)
