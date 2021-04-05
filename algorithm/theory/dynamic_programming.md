@@ -4,6 +4,14 @@
 
 <br>
 
+## Dynamic Programming의 조건
+
+- 최적 부분 구조(Optimal Substructure)
+
+- 중복되는 부분 문제(Overlapping Subproblems)
+
+<br>
+
 ## Memorization
 
 - 중복되는 계산은 한번만 계산 해두어 저장
@@ -11,6 +19,8 @@
 - Top-down Approach(하향식 접근)
 - 위에서부터 내려오기 때문에 필요한 값만 계산하여 불필요한 계산을 하지 않는다.
 - 콜스택이 쌓여 성능에 부하가 걸릴 위험이 있다.
+
+<br>
 
 ## Tabulation
 
