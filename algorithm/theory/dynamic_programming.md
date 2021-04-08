@@ -6,7 +6,7 @@
 
 ## Dynamic Programming의 조건
 
-- 최적 부분 구조(Optimal Substructure)
+- **최적 부분 구조(Optimal Substructure)** : 최적 부분 구조가 있다는 것은 부분 문제들의 최적의 답을 이용해서 기존 문제의 최적의 답을 구할 수 있다는 것!
 
 - 중복되는 부분 문제(Overlapping Subproblems)
 
@@ -95,3 +95,55 @@ print(fib_optimized(213))
 ```
 
 모든 값을 계산하고 저장하면 공간을 많이 차지하여 메모리를 많이 차지함 그래서 previous 와 current를 활용하여 공간복잡도 O(1)으로 풀이
+
+<br>
+
+### 새꼼달꼼 장사 Memoization 방식으로 풀기
+
+#### code
+
+```python
+def max_profit_memo(price_list, count, cache):
+
+    if count < 2:
+        cache[count] = price_list[count]
+        return price_list[count]
+
+    if count in cache:
+        return cache[count]
+
+    # profit은 count개를 팔아서 가능한 최대 수익 저장하는 변수
+    # 팔려고 하는 총개수에 대한 가격이 price_list에 없으면 일단 0으로 설정
+    # 팔려고 하는 총개수에 대한 가격 price_list에 있으면 일단 그 가격으로 설정
+    if count < len(price_list):
+        profit = price_list[count]
+    else:
+        profit = 0
+
+    # count개를 팔 수 있는 조합들을 비교해서, 가능한 최대 수익을 profit에 저장
+    # 중복해서 계산하는 것을 막기 위해 (count // 2) + 1
+    for i in range(1, (count // 2) + 1):
+        print('i : ', i)
+        profit = max(profit, max_profit_memo(price_list, i, cache)
+                     + max_profit_memo(price_list, count - i, cache))
+        print('profit: ', profit)
+    # 계산된 최대 수익을 cache에 저장
+    cache[count] = profit
+
+    return profit
+
+def max_profit(price_list, count):
+    max_profit_cache = {}
+
+    return max_profit_memo(price_list, count, max_profit_cache)
+
+
+# 테스트
+print(max_profit([0, 100, 400, 800, 900, 1000], 5))
+# print(max_profit([0, 100, 400, 800, 900, 1000], 10))
+# print(max_profit([0, 100, 400, 800, 900, 1000, 1400, 1600, 2100, 2200], 9))
+```
+
+- 다이나믹프로그래밍의 Memoization 방식으로 푼 코드이다.
+
+- max profit을 비교하는 것이 아직 이해되지 않는다.
