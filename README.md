@@ -77,3 +77,7 @@
 ### 조사해본 개념들
 
 - [개념 정리](https://github.com/kdh92417/TIL/blob/master/data/unknown_theory.md)
+
+### 기타
+
+- [VIM 정리](https://github.com/kdh92417/TIL/blob/master/etc/vim.md)
