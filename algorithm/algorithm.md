@@ -31,6 +31,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [투자 귀재 규식이 1](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/투자_귀재_규식이_1.md)
 
+- [투자 귀재 규식이 1](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/거듭_제곱.md)
+
 <br>
 
 ## LeetCode 문제풀이
