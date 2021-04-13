@@ -33,6 +33,10 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [거듭 제곱 빠르게 계산하기 with Memoization](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/거듭_제곱.md)
 
+- [빠르게 산 오르기](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/빠르게_산_오르기.md)
+
+- [중복되는 항목 찾기 level 1](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/중복되는_항목_찾기_1.md)
+
 <br>
 
 ## LeetCode 문제풀이
