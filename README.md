@@ -32,7 +32,12 @@
 - [HTML 기초](https://github.com/kdh92417/TIL/blob/master/basic/HTML%20Basic.md)
 - [CSS 기초](https://github.com/kdh92417/TIL/blob/master/basic/CSS.md)
 - [Advanced CSS](https://github.com/kdh92417/TIL/blob/master/basic/advanced_css.md)
-- [Git and Github](https://github.com/kdh92417/TIL/blob/master/basic/git_and_github.md) - 수정중
+
+### Git & Github
+
+- [Git and Github](https://github.com/kdh92417/TIL/blob/master/git/git_and_github.md) - 수정중
+
+- [Pull Request 연습](https://github.com/kdh92417/TIL/blob/master/git/pullrequest_practice.md)
 
 ### Javascript
 
