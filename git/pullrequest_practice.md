@@ -29,6 +29,13 @@
 
 ### 4. 업스트리밍에 Pull Request 날리기
 
-
-
 ![스크린샷 2021-04-15 오전 1 10 42](https://user-images.githubusercontent.com/58774316/114801136-12dd7e80-9dd6-11eb-8fb9-0af7034ecc5c.png)
+
+<br>
+
+
+### 5. Merge 된 최종 풀리퀘스트
+
+![스크린샷 2021-04-15 오전 10 40 15](https://user-images.githubusercontent.com/58774316/114801655-17eefd80-9dd7-11eb-8d79-5ae181dab94e.png)
+
+
