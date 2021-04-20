@@ -41,6 +41,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [중복되는 항목 찾기 level 1](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/중복되는_항목_찾기_1.md)
 
+- [삼송전자 주식 분석](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/삼송전자_주식_분석.md)
+
 <br>
 
 ## LeetCode 문제풀이
