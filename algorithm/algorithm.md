@@ -45,7 +45,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [출근하는방법 level 1](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/출근하는방법_level_1.md)
 
-<br>
+- [출근하는방법 level 2](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/출근하는방법_2.md)
+  <br>
 
 ## LeetCode 문제풀이
 
