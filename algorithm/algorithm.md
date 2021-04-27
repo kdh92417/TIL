@@ -49,7 +49,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [출근하는방법 level 2](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/출근하는방법_2.md)
 
-중복되는*항목*찾기\_2
+- [리스트 항목 합 탐색](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/리스트_항목_합_탐색.md)
+
 <br>
 
 ## LeetCode 문제풀이
