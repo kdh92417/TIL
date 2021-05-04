@@ -64,6 +64,10 @@
 
 - [문제 풀이 및 알고리즘 공부](https://github.com/kdh92417/TIL/blob/master/algorithm/algorithm.md)
 
+### 자료구조
+
+- [자료구조 in Python](https://github.com/kdh92417/TIL/blob/master/data_structure/data_structure.md)
+
 ### Implement as Python
 
 - [씨리얼 넘버 생성 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/create_serial.py)
