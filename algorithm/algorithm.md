@@ -85,7 +85,7 @@ LeetCode 문제 풀이하여 정리하여두는 공간입니다.
 
 - [프린터](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/프린터.py)
 
-- [다리를 지나는 트럭](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/다리를_지나는_트럭.py)
+- [다리를 지나는 트럭](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/다리를_지나는_트럭.md)
 
 - [소수 찾기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/소수찾기.md)
 
