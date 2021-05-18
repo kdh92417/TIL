@@ -92,3 +92,5 @@ LeetCode 문제 풀이하여 정리하여두는 공간입니다.
 - [K번째 수](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/k번째수.md)
 
 - [주식 가격](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/주식가격.md)
+
+- [완주하지 못한 선수](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/완주하지_못한_선수.md)
