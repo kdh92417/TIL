@@ -1,5 +1,15 @@
 # 해시 테이블 구현하기 with Doubly Linked List
 
+## 목차
+
+1. [해시 테이블을 위한 이중 링크드 리스트](##-해시-테이블을-위한-이중-링크드-리스트)
+
+2. [Hash Table](##-hash-table)
+
+3. [Open Addressing을 이용한 충돌 해결](##-open-addressing을-이용한-충돌-해결)
+
+<br>
+
 ## 해시 테이블을 위한 이중 링크드 리스트
 
 ```python
@@ -87,6 +97,8 @@ class LinkedList:
         return res_str
 ```
 
+<br>
+
 ## Hash Table
 
 ```python
@@ -133,6 +145,15 @@ class HashTable:
             # 없는 key면 링크드 리스트에 새롭게 삽입시킨다.
             linked_list = self._get_linked_list_for_key(key)
             linked_list.append(key, value)
+    
+    def delete_by_key(self, key):
+        """주어진 key에 해당하는 key - value 쌍을 삭제하는 메소드"""
+        node_to_delete = self._look_up_node(key)
+
+        # 저장되어 있는 key면 삭제한다.
+        if node_to_delete is not None:
+            linked_list = self._get_linked_list_for_key(key)
+            linked_list.delete(node_to_delete)
 
     def __str__(self):
         """해시 테이블 문자열 메소드"""
@@ -168,3 +189,17 @@ test_scores.insert("영훈", 30)
 
 print(test_scores)
 ```
+
+<br>
+
+## Open Addressing을 이용한 충돌 해결
+
+> 다른 비어있는 공간을 찾아서 데이터를 저장하는 방법
+
+### 선형탐사(linear probing)
+
+> 충돌이 일어났을 때, 빈 인덱스를 하나씩 순서대로 선형적으로 찾는 방법
+
+
+
+
