@@ -63,6 +63,8 @@ LeetCode 문제 풀이하여 정리하여두는 공간입니다.
 
 - [125. valid palindrome](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/125_valid_palindrome.md)
 
+- [771. jewels and stones](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/771_jewels_and_stones.md)
+
 <br>
 
 ## 백준 문제 풀이
