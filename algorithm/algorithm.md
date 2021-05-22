@@ -53,50 +53,55 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 <br>
 
-## LeetCode 문제풀이
+## Category
 
-LeetCode 문제 풀이하여 정리하여두는 공간입니다.
+### 문자열 조작
 
-- [9. Palindrome Number](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/9_palindrome_number.md)
+- [LeetCode - 125. valid palindrome](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/125_valid_palindrome.md)
 
-- [13. Roman to Integer](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/13_Roman_to_Integer.md)
+- [BaekJoon - 2675. 문자열 반복](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/2675.py)
 
-- [125. valid palindrome](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/125_valid_palindrome.md)
+### Brute Force
 
-- [771. jewels and stones](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/771_jewels_and_stones.md)
+- [Programmers - 약수의 합](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/약수의합.py)
 
-<br>
+- [Programmers - 소수 찾기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/소수찾기.md)
 
-## 백준 문제 풀이
+### 정렬
 
-백준 사이트에 있는 문제를 풀고, 정리
+- [Programmers - K번째 수](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/k번째수.md)
 
-- [1110. 더하기 사이클](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1110.py)
+### Hash
 
-- [2675. 문자열 반복](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/2675.py)
+- [LeetCode - 771. jewels and stones](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/771_jewels_and_stones.md)
 
-- [11729. Top of Hanoi](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/11729.py)
+- [Programmers - 완주하지 못한 선수](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/완주하지_못한_선수.md)
 
-<br>
+- [Programmers - 전화번호부 목록](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/전화번호부_목록.md)
 
-## Programmers 문제 풀이
+- [Programmers - 위장](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/위장.md)
 
-프로그래머스 문제 풀이
+### Recursive 
 
-- [약수의 합](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/약수의합.py)
+- [BaekJoon - 11729. Top of Hanoi](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/11729.py)
 
-- [프린터](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/프린터.py)
-
-- [다리를 지나는 트럭](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/다리를_지나는_트럭.md)
-
-- [소수 찾기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/소수찾기.md)
-
-- [K번째 수](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/k번째수.md)
+### Stack / Queue
 
 - [주식 가격](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/주식가격.md)
 
-- [완주하지 못한 선수](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/완주하지_못한_선수.md)
+- [Programmers - 다리를 지나는 트럭](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/다리를_지나는_트럭.md)
 
-- [전화번호부 목록](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/전화번호부_목록.md)
+- [Programmers - 프린터](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/프린터.md)
 
-- [위장](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/위장.md)
+### Tree
+
+- [BaekJoon - 1991. 트리순회](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1991.md)
+
+
+### Etc
+
+- [BaekJoon - 1110. 더하기 사이클](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1110.py)
+
+- [LeetCode - 9. Palindrome Number](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/9_palindrome_number.md)
+
+- [LeetCode - 13. Roman to Integer](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/13_Roman_to_Integer.md)
