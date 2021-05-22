@@ -11,7 +11,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [Dynamic Programming](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/dynamic_programming.md)
 
-- [Binary Search](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/binary_search)
+- [Binary Search](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/binary_search.md)
 
 - [Greedy Algorithm](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/greedy_algorithm.md)
 
