@@ -97,6 +97,10 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [BaekJoon - 1991. 트리순회](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1991.md)
 
+### Heap
+
+- [힙 정렬 구현하기](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/heapify.md)
+
 
 ### Etc
 
