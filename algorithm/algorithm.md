@@ -97,6 +97,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [BaekJoon - 1991. 트리순회](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1991.md)
 
+
 ### Heap
 
 - [힙 정렬 구현하기](https://github.com/kdh92417/TIL/blob/master/algorithm/codeit/heapify.md)
@@ -104,6 +105,10 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Programmers - 더 맵게](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/더맵게.md)
 
 - [LeetCode - 347. Top K Frequent Elements](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/347_top_k_frequent_elements.md)
+
+### 이진 검색
+
+- [BaekJoon - 1300. K번째 수](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1300.md)
 
 
 ### Etc
