@@ -106,9 +106,13 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [LeetCode - 347. Top K Frequent Elements](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/347_top_k_frequent_elements.md)
 
-### 이진 검색
+### 이진 탐색
 
 - [BaekJoon - 1300. K번째 수](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1300.md)
+
+### LIS(Longest Increasing Subsequence)
+
+- [BaekJoon - 11053. 가장 긴 증가하는 부분 수열 1](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/11053.md)
 
 
 ### Etc
