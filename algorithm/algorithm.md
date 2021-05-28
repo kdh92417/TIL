@@ -114,6 +114,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [BaekJoon - 11053. 가장 긴 증가하는 부분 수열 1](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/11053.md)
 
+- [BaekJoon - 12015. 가장 긴 증가하는 부분 수열 2](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/12015.md)
+
 
 ### Etc
 
