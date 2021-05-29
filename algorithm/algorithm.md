@@ -93,6 +93,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [Programmers - 프린터](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/프린터.md)
 
+- [BaekJoon - 1406. 에디터](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1406.md)
+
 ### Tree
 
 - [BaekJoon - 1991. 트리순회](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1991.md)
