@@ -91,8 +91,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [BaekJoon - 12015. 가장 긴 증가하는 부분 수열 2](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/12015.md)
 
 ### BFS / DFS
-- [200 - Number of Islands](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/200.md)
-
+- [Leetcode - 200. Number of Islands](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/200.md)
+- [BaekJoon - 4963. 섬의 개수](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/4963.md)
 
 ### Etc
 
