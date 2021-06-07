@@ -107,3 +107,4 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [BaekJoon - 1110. 더하기 사이클](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1110.py)
 - [LeetCode - 9. Palindrome Number](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/9_palindrome_number.md)
 - [LeetCode - 13. Roman to Integer](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/13_Roman_to_Integer.md)
+- [LeetCode - 42. Trapping Rain Water](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/42.md)
