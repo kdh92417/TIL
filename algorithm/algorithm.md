@@ -5,7 +5,7 @@
 
 <br>
 
-## Codeit Algorithm 공부
+## Algorithm 공부
 
 codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
@@ -17,6 +17,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Divide And Conquer](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/divide_and_conquer.md)
 - [Merge Sort](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/merge_sort.md)
 - [Quick Sort](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/quick_sort.md)
+- [정렬 개념 및 구현](https://github.com/kdh92417/TIL/blob/master/algorithm/theory/정렬.md)
 
 <br>
 
