@@ -59,7 +59,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Programmers - 완주하지 못한 선수](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/완주하지_못한_선수.md)
 - [Programmers - 전화번호부 목록](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/전화번호부_목록.md)
 - [Programmers - 위장](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/위장.md)
-
+- [LeetCode - 1. Two Sum](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/1.md)
 ### Recursive 
 
 - [BaekJoon - 11729. Top of Hanoi](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/11729.py)
