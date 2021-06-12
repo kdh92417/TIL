@@ -74,6 +74,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 ### 연결리스트
 
 - [LeetCode - 234. Palindrome Linked List](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/234.md)
+- [LeetCode - 21. Merge Two Sorted Lists](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/21.md)
 
 ### Tree
 
