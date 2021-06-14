@@ -1,8 +1,7 @@
 # 기술 면접 대비 개념 정리
 
-1. [Overriding & Overloading](#-overriding-&-overloading)
-2. [동기와 비동기](#-동기와-비동기)
-
+1. [Overriding & Overloading](#overriding-&-overloading)
+2. [동기와 비동기](#동기와-비동기)
 3. [절차지향과 객체지향](#-절차지향언어와-객체지향언어)
 4. [클래스와 오브젝트](#-class-&-object)
 5. [Restful API](#-restful-api)
