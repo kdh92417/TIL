@@ -141,4 +141,6 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 ## Codility
 - [CyclicRotation](https://github.com/kdh92417/TIL/blob/master/algorithm/codility/cyclic_rotation.md)
 - [OddOccurrencesInArray](https://github.com/kdh92417/TIL/blob/master/algorithm/codility/0ddO_ccurrences_in_array.md)
+- [3-2. PermMissingElem](https://github.com/kdh92417/TIL/blob/master/algorithm/codility/3-2_PermMissingElem.md)
+
 
