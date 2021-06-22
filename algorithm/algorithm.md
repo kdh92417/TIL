@@ -128,6 +128,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 ### Easy
 
 - [Time Conversion](https://github.com/kdh92417/TIL/blob/master/algorithm/hackerrank/time_conversion.md)
+- [Number Line Jumps](https://github.com/kdh92417/TIL/blob/master/algorithm/hackerrank/Number_Line_Jumps.md)
 
 ### Medium
 
