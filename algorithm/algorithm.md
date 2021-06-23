@@ -129,14 +129,14 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [Time Conversion](https://github.com/kdh92417/TIL/blob/master/algorithm/hackerrank/time_conversion.md)
 - [Number Line Jumps](https://github.com/kdh92417/TIL/blob/master/algorithm/hackerrank/Number_Line_Jumps.md)
-
+- [Between Two Sets](https://github.com/kdh92417/TIL/blob/master/algorithm/hackerrank/Between_Two_Sets.md)
 ### Medium
 
 ### Hard
 
 - [Fraudulent Activity Notifications](https://github.com/kdh92417/TIL/blob/master/algorithm/hackerrank/fraudulent_activity_notifications.md)
 - [Array Manipulation](https://github.com/kdh92417/TIL/blob/master/algorithm/hackerrank/array_manipulation.md)
-- [Between Two Sets](https://github.com/kdh92417/TIL/blob/master/algorithm/hackerrank/Between_Two_Sets.md)
+
 
 
 <br>

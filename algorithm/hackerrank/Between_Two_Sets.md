@@ -8,6 +8,8 @@
 
 ## 풀이
 
+### 처음 풀이
+
 ```python
 def getTotalX(a, b):
 
@@ -46,7 +48,9 @@ def getTotalX(a, b):
 
 하지만 중첩반복문을 써서 시간복잡도가 O(n<sup>2</sup>)이다. 시간복잡도를 더 줄여야겠다.
 
+<br>
 
+### 최소공배수와 최대공약수를 이용한 풀이
 
 ```python
 # highest common factor(리스트의 최대 공배수)
