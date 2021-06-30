@@ -40,8 +40,12 @@ INSTALLED_APPS = [
 
     # REST Framework
     'rest_framework',
+
+    # Apps
     'api_basic',
     'news',
+    'quickstart',
+    'Snippets.apps.SnippetsConfig',
 
 ]
 
@@ -135,5 +139,7 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+    ],
+    'DEFAULT_PAGINATION_CLASS' : 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE' : 2,
 }
