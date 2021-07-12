@@ -124,7 +124,6 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [LeetCode - 9. Palindrome Number](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/9_palindrome_number.md)
 - [LeetCode - 13. Roman to Integer](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/13_Roman_to_Integer.md)
 - [LeetCode - 42. Trapping Rain Water](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/42.md)
-- [Programmers - 키패드 누르기[카카오 인턴]](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/키패드_누르기.md)
 
 <br>
 
@@ -154,3 +153,11 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [3-2. PermMissingElem](https://github.com/kdh92417/TIL/blob/master/algorithm/codility/3-2_PermMissingElem.md)
 - [3-3. TapeEquilibrium](https://github.com/kdh92417/TIL/blob/master/algorithm/codility/3-3_TapeEquilibrium.md)
 - [4-1. FrogRiverOne](https://github.com/kdh92417/TIL/blob/master/algorithm/codility/4-1_FrogRiverOne.md)
+
+
+<br>
+
+## 카카오 코딩테스트 문제
+- [Programmers - 키패드 누르기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/키패드_누르기.md)
+- [Programmers - 거리두기 확인하기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/거리두기_확인하기.md)
+
