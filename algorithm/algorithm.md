@@ -45,6 +45,11 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [BaekJoon - 2675. 문자열 반복](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/2675.py)
 - [Programmers - 신규 아이디 추천](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/신규_아이디_추천.md)
 
+### Math
+
+- [Programmers - 신규 아이디 추천](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/3진법_뒤집기.md)
+
+
 ### Brute Force
 
 - [Programmers - 약수의 합](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/약수의합.py)
