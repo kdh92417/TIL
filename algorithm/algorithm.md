@@ -44,6 +44,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [LeetCode - 125. valid palindrome](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/125_valid_palindrome.md)
 - [BaekJoon - 2675. 문자열 반복](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/2675.py)
 - [Programmers - 신규 아이디 추천](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/신규_아이디_추천.md)
+- [Programmers - 문자열 압축](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/문자열_압축.md)
 
 ### Math
 
