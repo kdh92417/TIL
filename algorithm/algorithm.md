@@ -77,7 +77,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Programmers - 다리를 지나는 트럭](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/다리를_지나는_트럭.md)
 - [Programmers - 프린터](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/프린터.md)
 - [BaekJoon - 1406. 에디터](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1406.md)
-- [Programmers - 프린터](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/스킬트리.md)
+- [Programmers - 스킬트리](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/스킬트리.md)
 
 
 ### 연결리스트
