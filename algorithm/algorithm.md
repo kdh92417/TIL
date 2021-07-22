@@ -49,6 +49,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 ### Math
 
 - [Programmers - 신규 아이디 추천](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/3진법_뒤집기.md)
+- [Programmers - 뉴스 클러스터링](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/뉴스_클러스터링.md)
 
 
 ### Brute Force
@@ -67,6 +68,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Programmers - 전화번호부 목록](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/전화번호부_목록.md)
 - [Programmers - 위장](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/위장.md)
 - [LeetCode - 1. Two Sum](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/1.md)
+
 ### Recursive 
 
 - [BaekJoon - 11729. Top of Hanoi](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/11729.py)
