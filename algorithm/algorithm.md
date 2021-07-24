@@ -145,6 +145,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [LeetCode - 13. Roman to Integer](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/13_Roman_to_Integer.md)
 - [LeetCode - 42. Trapping Rain Water](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/42.md)
 - [Programmers - 폰켓몬](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/폰켓몬.md)
+- [Programmers - 비밀지도](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/비밀지도.md)
 
 <br>
 
