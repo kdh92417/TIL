@@ -36,7 +36,6 @@
 ### Git & Github
 
 - [Git and Github](https://github.com/kdh92417/TIL/blob/master/git/git_and_github.md) - 수정중
-
 - [Pull Request 연습](https://github.com/kdh92417/TIL/blob/master/git/pullrequest_practice.md)
 
 ### Javascript
@@ -47,13 +46,9 @@
 ### Python
 
 - [기본 개념](https://github.com/kdh92417/TIL/blob/master/python/basic_theory_in_python.md)
-
 - [Logical operator](https://github.com/kdh92417/TIL/blob/master/python/logical_operator.md)
-
 - [string formatting](https://github.com/kdh92417/TIL/blob/master/python/string_formatting.md)
-
 - [Optional Parameter](https://github.com/kdh92417/TIL/blob/master/python/optional_parameter.md)
-
 - [객체지향 과 데코레이터](https://github.com/kdh92417/TIL/blob/master/python/dependency)
 
 ### Django
@@ -73,15 +68,10 @@
 
 - [씨리얼 넘버 생성 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/create_serial.py)
 - [점수를 입력받아 등급과 학점 평균 산출 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/grade_average_calculator.py)
-
 - [GUI Calculator with PyQt5](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/calculator.py)
-
 - [주민번호 정규표현식으로 마킹하여 출력하기](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/marking_number.py)
-
 - [Apache Log 파일을 CSV 파일로 Parsing](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/parsing_apache_log.md)
-
 - [서버 구축 및 Ajax를 이용한 데이터 통신](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/programmers/readme.md)
-
 - [PyGame으로 오목게임 만들기 with OOP](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/omok)
 
 ### 조사해본 개념들
@@ -99,3 +89,5 @@
 - [2021. 07. 24(Sat)](https://github.com/kdh92417/TIL/blob/master/til/20210724.md)
 - [2021. 07. 26(Mon)](https://github.com/kdh92417/TIL/blob/master/til/20210726.md)
 - [2021. 07. 27(Tue)](https://github.com/kdh92417/TIL/blob/master/til/20210727.md)
+- [2021. 07. 28(Wed)](https://github.com/kdh92417/TIL/blob/master/til/20210728.md)
+- [2021. 07. 29(Thu)](https://github.com/kdh92417/TIL/blob/master/til/20210729.md)
