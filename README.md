@@ -91,3 +91,4 @@
 - [2021. 07. 27(Tue)](https://github.com/kdh92417/TIL/blob/master/til/20210727.md)
 - [2021. 07. 28(Wed)](https://github.com/kdh92417/TIL/blob/master/til/20210728.md)
 - [2021. 07. 29(Thu)](https://github.com/kdh92417/TIL/blob/master/til/20210729.md)
+- [2021. 07. 30(Fri)](https://github.com/kdh92417/TIL/blob/master/til/20210730.md)
