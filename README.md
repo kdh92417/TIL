@@ -83,15 +83,3 @@
 
 - [VIM 정리](https://github.com/kdh92417/TIL/blob/master/etc/vim.md)
 
-### TIL(Today I Leaned)
-
-- [2021. 07. 23(Fri)](https://github.com/kdh92417/TIL/blob/master/til/20210723.md)
-- [2021. 07. 24(Sat)](https://github.com/kdh92417/TIL/blob/master/til/20210724.md)
-- [2021. 07. 26(Mon)](https://github.com/kdh92417/TIL/blob/master/til/20210726.md)
-- [2021. 07. 27(Tue)](https://github.com/kdh92417/TIL/blob/master/til/20210727.md)
-- [2021. 07. 28(Wed)](https://github.com/kdh92417/TIL/blob/master/til/20210728.md)
-- [2021. 07. 29(Thu)](https://github.com/kdh92417/TIL/blob/master/til/20210729.md)
-- [2021. 07. 30(Fri)](https://github.com/kdh92417/TIL/blob/master/til/20210730.md)
-- [2021. 07. 31(Sat)](https://github.com/kdh92417/TIL/blob/master/til/20210731.md)
-- [2021. 08. 02(Mon)](https://github.com/kdh92417/TIL/blob/master/til/20210802.md)
-- [2021. 08. 03(Tue)](https://github.com/kdh92417/TIL/blob/master/til/20210803.md)
