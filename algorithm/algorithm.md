@@ -118,6 +118,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 ### 그래프
 - [Programmers - 가장 먼 노드](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/가장_먼_노드.md)
 
+### 투 포인터
+- [Programmers - 보석 쇼핑](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/보석_쇼핑.md)
 ### BFS / DFS
 - [Leetcode - 200. Number of Islands](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/200.md)
 - [BaekJoon - 4963. 섬의 개수](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/4963.md)
