@@ -202,3 +202,8 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Programmers - 키패드 누르기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/키패드_누르기.md)
 - [Programmers - 거리두기 확인하기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/거리두기_확인하기.md)
 - [Programmers - 표 편집](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/표편집.md)
+
+<br>
+
+## Programmers 위클리 챌린지
+- [2주차](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/2주차.md)
