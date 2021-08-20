@@ -120,3 +120,83 @@ doker-compose up --build # 이미지가 있든 없든 이미지를 빌드하고 
 # docker build -f <파일명> 찾을경로
 docker build -f Dockerfile.dev ./
 ```
+<br>
+
+### React 앱 Docker Compose로 실행
+
+- `docker-compose up` : 도커컴포즈 실행
+
+```docker
+version: "3"
+services:
+    react:
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        ports:
+            - "3000:3000"
+        volumes:
+            - /usr/src/app/node_modules
+            - ./:/usr/src/app
+        stdin_open: true
+```
+
+<br>
+
+### 도커를 이용한 리액트 앱에서 테스트
+
+```bash
+# 이미지 생성
+docker build -f dockerfile.dev .
+# 앱 실행
+docker run -it <이미지이름> npm run test
+```
+
+<br>
+
+### 도커에서 테스트 소스 코드 자동 반영
+
+```docker
+version: "3"
+services:
+    react:
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        ports:
+            - "3000:3000"
+        volumes:
+            - /usr/src/app/node_modules
+            - ./:/usr/src/app
+        stdin_open: true
+    tests:
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        volumes:
+            - /usr/src/app/node_modules
+            - ./:/usr/src/app
+        command: ["npm", "run", "test"]
+```
+
+<br>
+
+### 운영환경 도커파일
+
+```docker
+FROM node:alpine as builder
+
+WORKDIR  '/usr/src/app'
+
+COPY package.json ./
+
+RUN npm install
+
+COPY ./ ./
+
+RUN npm run build
+
+FROM nginx
+
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+```
