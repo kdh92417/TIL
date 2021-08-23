@@ -1,122 +1,13 @@
 # 기술 면접 대비 개념 정리
 
-1. [Overriding & Overloading](#overriding-&-overloading)
-2. [동기와 비동기](#동기와-비동기)
-3. [절차지향과 객체지향](#절차지향언어와-객체지향언어)
-4. [클래스와 오브젝트](#class-&-object)
-5. [Restful API](#restful-api)
+- [Overriding & Overloading](https://github.com/kdh92417/TIL/blob/master/etc/interview/Overriding_and_Overloading.md)
+- [동기와 비동기](https://github.com/kdh92417/TIL/blob/master/etc/interview/동기_비동기.md)
+- [절차지향과 객체지향](https://github.com/kdh92417/TIL/blob/master/etc/interview/절차지향과객체지향.md)
+- [클래스와 오브젝트](https://github.com/kdh92417/TIL/blob/master/etc/interview/class_object.md)
+- [Restful API](https://github.com/kdh92417/TIL/blob/master/etc/interview/restful_api.md)
 6. [라이브러리와 프레임워크](#라이브러리와-프레임워크)
 7. [스택과 큐](#스택과-큐)
 8. [서버사이드 렌더링과 클라이언트 사이드 렌더링](#서버사이드-렌더링과-클라이언트-사이드-렌더링)
-
-
-<br>
-
-# Overriding & Overloading
-
-### Overriding
-
-- 부모 클래스에서 정의한 메서드를 자식클래스에서 재정의하는 것(덮어씌우기)
-
-```python
-# 부모 클래스
-class Calc(object):
-    def __init__(self, num1, num2):
-        self.num1 = num1
-        self.num2 = num2
-
-    def sum(self):
-        return self.num1 + self.num2
-
-c = Calc(2, 3)
-print(c.sum())
-
-# 자식 클래스(부모클래스 상속)
-class Minus(Calc):
-        # Override
-    def sum(self):
-        return self.num1 - self.num2
-
-m = Minus(2, 3)
-print(m.sum())
-```
-
-### Overloading
-
----
-
-- 동일한 이름의 함수를 매개변수에 따라 다른 기능으로 동작하게 하는 것
-- 파이썬에서는 오버로딩을 정식으로 지원하지 않는다.
-
-> 오버라이딩 과 오버로딩을 비교하자면 오버라이딩은 클래스의 상속 시에를 클래스를 수정하는 것이고 오버로딩은 하나의 메서드에 다형성을 부여하는 것이다.
-
-<br>
-
-# 동기와 비동기
-
-> 동기와 비동기는 메서드를 호출할때 사용하는 용어
-
-### 동기란?
-
-메서드를 호출하는 호출자가 응답할때까지 다음프로세스를 진행하지 못하고 기다리는 것
-
-### 비동기란?
-
-동기의 반대로서 메서드를 호출하는 호출자가 응답할때까지 기다리지 않고, 바로 다음 프로세스로 진행하는 것이다.
-
-<br>
-
-# 절차지향언어와 객체지향언어
-
-### 절차지향언어
-
-데이터가 중심으로 Top - Down 방식으로 프로그래밍하는 방식이다.
-
-## 객체지향언어
-
-데이터와 절차를 하나의 덩어리로 묶어서 프로그래밍하는 방식
-
-- 조립부품을 사서 조립하는 방식과 유사
-
-> 절차지향언어는 순차적인 실행에 초점을 두고, 객체지향언어는 객체간의 관계에 초점을 둔다.
-
-<br>
-
-# Class & Object
-
-### Class란?
-
-객체를 만들기 위한 설계도
-
-### Object란?
-
-클래스로 구현된 실체화된 대상
-
-### Instance란?
-
-Object가 메모리에 할당되어질때 Instance라 불린다.
-
-<br>
-
-# Restful API
-
-### API란?
-
-- 어떤 응용프로그램에서 데이터를 주고받기위한 방법을 의미한다.
-- 어느 특정 사이트에서 정보를 공유할경우 어떤식으로 정보를 요청해야하는지 그리고 어떠한 정보들을 제공받을 수 있는지에 대한 규격
-
-### Restful API란?
-
-- Rest 기반의 규칙들을 지켜서 설계된 API
-- URI는 자원을 HTTP method로는 각 요청의 의도를 파악할 수 있게 만드는 것을 REST라 한다.
-- REST API는 REST 아킥텍처가 있는 API라는 뜻이고, RESTful API는 완벽히 REST 규칙들을 지킨 API라한다.
-
-### REST가 필요한 이유
-
-1. 분산시스템을 위해서
-    - 어플리케이션을 모듈, 기능별로 분리하기 쉬워져서
-2. 멀티플랫폼
-    - 핸드폰이나 태블릿PC등 다양한 기기가 부담없이 데이터를 이용할 수 있어서
 
 <br>
 
