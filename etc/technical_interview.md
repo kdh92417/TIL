@@ -1,5 +1,6 @@
 # 기술 면접 대비 개념 정리
 
+- [웹에 접속했을 때 일어나는 과정](https://github.com/kdh92417/TIL/blob/master/etc/interview/웹에접속했을때.md)
 - [Overriding & Overloading](https://github.com/kdh92417/TIL/blob/master/etc/interview/Overriding_and_Overloading.md)
 - [동기와 비동기](https://github.com/kdh92417/TIL/blob/master/etc/interview/동기_비동기.md)
 - [절차지향과 객체지향](https://github.com/kdh92417/TIL/blob/master/etc/interview/절차지향과객체지향.md)
