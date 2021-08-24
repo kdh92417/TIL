@@ -20,4 +20,4 @@
 
 ## Python
 
-- [정리해야됨! - Immutable 객체와 mutable 객체]()
+- [정리해야됨! - Immutable 객체와 mutable 객체](https://github.com/kdh92417/TIL/blob/master/etc/interview/immutable_and_mutable.md)
