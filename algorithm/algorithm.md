@@ -54,6 +54,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [Programmers - 신규 아이디 추천](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/3진법_뒤집기.md)
 - [Programmers - 뉴스 클러스터링](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/뉴스_클러스터링.md)
+- [Programmers - 뉴스 클러스터링](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/멀쩡한사각형.md)
 
 
 ### Brute Force
