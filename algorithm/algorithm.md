@@ -130,6 +130,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Programmers - 타겟 넘버](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/타겟_넘버.md)
 - [BaekJoon - 2606. 바이러스](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/2606.md)
 - [Programmers - 여행경로](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/여행경로.md)
+- [Leetcode - 78. Subsets](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/78.md)
 
 ### 최단경로
 
