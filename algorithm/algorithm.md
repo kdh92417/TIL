@@ -87,6 +87,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [BaekJoon - 1406. 에디터](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1406.md)
 - [Programmers - 스킬트리](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/스킬트리.md)
 - [Programmers - 다리를 지나는 트럭](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/크레인_인형뽑기_게임.md)
+- [Programmers - 짝지어 제거하기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/짝지어제거하기.md)
 
 
 ### 연결리스트
