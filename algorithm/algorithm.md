@@ -163,6 +163,9 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Leetcode - 239. Sliding Window Maximum](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/239.md)
 - [Programmers - 추석 트래픽](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/추석트래픽.md)
 
+### Dynamic Programming
+
+- [Programmers - N으로 표현](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/N으로표현.md)
 
 ### Etc
 
