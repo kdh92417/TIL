@@ -52,6 +52,9 @@
 - [Optional Parameter](https://github.com/kdh92417/TIL/blob/master/python/optional_parameter.md)
 - [객체지향 과 데코레이터](https://github.com/kdh92417/TIL/blob/master/python/dependency)
 
+### DB
+- []()
+
 ### Django
 
 - [장고 기본 개념 공부 - Tango with Django](https://github.com/kdh92417/TIL/blob/master/django/tango_with_django.md)
