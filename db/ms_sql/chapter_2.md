@@ -64,7 +64,7 @@ GO
     ```
     
     ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ee70139d-f171-421e-b7ef-ceb4fcb7fa63/Untitled.png)
-    
+
 
 ### 열 삭제
 

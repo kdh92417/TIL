@@ -53,7 +53,9 @@
 - [객체지향 과 데코레이터](https://github.com/kdh92417/TIL/blob/master/python/dependency)
 
 ### DB
-- []()
+
+- [Chapter 9. Transaction](https://github.com/kdh92417/TIL/blob/master/db/ms_sql.md)
+
 
 ### Django
 
