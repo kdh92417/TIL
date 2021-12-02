@@ -1,22 +1,24 @@
-- [Vanilla Javascript](#vanilla-javascript)
-    + [1. `1-vanilla/scafolding`](#1--1-vanilla-scafolding-)
-    + [2. `1-vanilla/controller`](#2--1-vanilla-controller-)
-    + [3.  `1-vanilla/FormView1`](#3---1-vanilla-formview1-)
-    + [4.  `1-vanilla/FormView3` : X 버튼을 클릭하거나, 검색어를 삭제하면 검색 결과를 삭제](#4---1-vanilla-formview3----x-------------------------------)
-    + [5.  `1-vanilla/FormView4` : 검색결과 구현 1](#5---1-vanilla-formview4------------1)
-    + [6.  `1-vanilla/ResultView1` : 검색 결과가 보인다.](#6---1-vanilla-resultview1--------------)
-    + [7.  `1-vanilla/ResultView2` : `X` 버튼을 클릭하면 검색폼이 초기화 되고, 검색 결과가 사라진다.](#7---1-vanilla-resultview2-----x-----------------------------------)
-    + [8.  `1-vanilla/ResultView3` : 추천 검색어, 최근 검색어 탭이 검색폼 아래 위치한다.](#8---1-vanilla-resultview3---------------------------------)
-    + [9.  `1-vanilla/TabView1` : 기본으로 추천 검색어 탭을 선택한다.](#9---1-vanilla-tabview1-----------------------)
-    + [10. `1-vanilla/TabView2` : 각 탭을 클릭하면 탭 아래 내용이 변경된다.](#10--1-vanilla-tabview2---------------------------)
-    + [11. `1-vanilla/TabView3` : 최근 검색어, 목록이 탭 아래 위치한다.](#11--1-vanilla-tabview3-------------------------)
-    + [12. `1-vanilla/KeywordView1` :목록에서 검색어를 클릭하면 선택된 검색어로 검색 결과 화면으로 이동](#12--1-vanilla-keywordview1----------------------------------------)
-    + [13. `1-vanilla/KeywordView2` : 검색폼에 선택된 추천 검색어 설정](#13--1-vanilla-keywordview2----------------------)
-    + [14. `1-vanilla/KeywordView3` : 최근 검색어, 목록이 탭 아래 위치한다.](#14--1-vanilla-keywordview3-------------------------)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # Vanilla Javascript
+
++ [1. `1-vanilla/scafolding`](#1--1-vanilla-scafolding-)
++ [2. `1-vanilla/controller`](#2--1-vanilla-controller-)
++ [3.  `1-vanilla/FormView1`](#3---1-vanilla-formview1-)
++ [4.  `1-vanilla/FormView3` : X 버튼을 클릭하거나, 검색어를 삭제하면 검색 결과를 삭제](#4---1-vanilla-formview3----x-------------------------------)
++ [5.  `1-vanilla/FormView4` : 검색결과 구현 1](#5---1-vanilla-formview4------------1)
++ [6.  `1-vanilla/ResultView1` : 검색 결과가 보인다.](#6---1-vanilla-resultview1--------------)
++ [7.  `1-vanilla/ResultView2` : `X` 버튼을 클릭하면 검색폼이 초기화 되고, 검색 결과가 사라진다.](#7---1-vanilla-resultview2-----x-----------------------------------)
++ [8.  `1-vanilla/ResultView3` : 추천 검색어, 최근 검색어 탭이 검색폼 아래 위치한다.](#8---1-vanilla-resultview3---------------------------------)
++ [9.  `1-vanilla/TabView1` : 기본으로 추천 검색어 탭을 선택한다.](#9---1-vanilla-tabview1-----------------------)
++ [10. `1-vanilla/TabView2` : 각 탭을 클릭하면 탭 아래 내용이 변경된다.](#10--1-vanilla-tabview2---------------------------)
++ [11. `1-vanilla/TabView3` : 최근 검색어, 목록이 탭 아래 위치한다.](#11--1-vanilla-tabview3-------------------------)
++ [12. `1-vanilla/KeywordView1` :목록에서 검색어를 클릭하면 선택된 검색어로 검색 결과 화면으로 이동](#12--1-vanilla-keywordview1----------------------------------------)
++ [13. `1-vanilla/KeywordView2` : 검색폼에 선택된 추천 검색어 설정](#13--1-vanilla-keywordview2----------------------)
++ [14. `1-vanilla/KeywordView3` : 최근 검색어, 목록이 탭 아래 위치한다.](#14--1-vanilla-keywordview3-------------------------)
++ [15. `1-vanilla/HistoryView1` : 검색일자, 버튼 목록이 탭 아래 위치한다.](#15--1-vanilla-historyview1--------------------------)
++ [16. `1-vanilla/HistoryView2` : 목록에서 x버튼을 클릭하면 선택된 검색어가 목록에서 삭제](#16--1-vanilla-historyview2---------x-------------------------)
++ [17. `1-vanilla/HistoryView3` : 탭을 클릭하면 해당 탭으로 이동](#17--1-vanilla-historyview3---------------------)
 
 ### 1. `1-vanilla/scafolding`
 
@@ -704,4 +706,94 @@
         })
       },
     }
+    ```
+
+<br>
+
+### 15. `1-vanilla/HistoryView1` : 검색일자, 버튼 목록이 탭 아래 위치한다.
+
+- HistoryView.js
+    
+    ```jsx
+    // KeywordView의 getKeywordHtml 메소드 오버라이딩
+    HistoryView.getKeywordsHtml = function (data) {
+        return data.reduce((html, item) => {
+            html += `<li data-keyword="${item.keyword}">
+                ${item.keyword}
+                <span class="date">${item.date}</span>
+                <button class="btn-remove"></button>
+            </li>`
+            return html
+        }, `<ul class="list">`) + '</ul>'
+    }
+    ```
+
+<br>
+
+### 16. `1-vanilla/HistoryView2` : 목록에서 x버튼을 클릭하면 선택된 검색어가 목록에서 삭제
+
+- HistoryView.js
+    
+    ```jsx
+    // 최근 검색된 btn에 이벤트 바인딩
+    HistoryView.bindRemoveBtn = function () {
+        Array.from(this.el.querySelectorAll('button.btn-remove')).forEach(btn => {
+            btn.addEventListener('click', e => {
+    						// 해당 이벤트가 상위 엘리먼트로 이벤트 버블링되지 않도록 막는다.
+                e.stopPropagation();
+    						// 해당 버튼의 키워드를 인자로 갖는 onRemove 이벤트 바인딩
+                this.onRemove(btn.parentElement.dataset.keyword);
+            })
+        })
+    }
+    
+    // MainController에게 이벤트와 키워드 전달
+    HistoryView.onRemove = function (keyword) {
+        this.emit('@remove', { keyword })
+    }
+    ```
+    
+
+- MainController.js
+    
+    ```jsx
+    init() {
+    	.
+    	.
+    
+    	HistoryView.setup(document.querySelector('#search-history'))
+          .on('@click', e => this.onClickHistory(e.detail.keyword))
+    			// @remove 이벤트 수신하여 onRemoveHistory에 전달
+          .on('@remove', e => this.onRemoveHistory(e.detail.keyword)
+    }
+    
+    	fetchSearchHistory() {
+        HistoryModel.list().then(data => {
+    			// 렌더한 돔에 bindRemoveBtn 함수를 체이닝
+    			// 체이닝 하기 위해 KeywordView.render 함수에서 this를 반환해야됨
+          HistoryView.render(data).bindRemoveBtn()
+        })
+      },
+    
+    	onRemoveHistory(keyword) {
+    		// 삭제이벤트는 Model에 위임하여 처리
+        HistoryModel.remove(keyword);
+    		// 다시 화면을 그린다.
+        this.renderView();
+      }
+    ```
+    
+<br>
+
+### 17. `1-vanilla/HistoryView3` : 탭을 클릭하면 해당 탭으로 이동
+
+- MainController.js
+    
+    ```jsx
+    onChangeTab(tabName) {
+    		// 클릭된 탭으로 변경
+        this.selectedTab = tabName;
+    		// 클릭된 탭으로 화면 그리기
+        this.renderView();
+    },
     ```
