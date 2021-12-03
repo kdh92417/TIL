@@ -1,24 +1,4 @@
-
-
 # Vanilla Javascript
-
-+ [1. `1-vanilla/scafolding`](#1--1-vanilla-scafolding-)
-+ [2. `1-vanilla/controller`](#2--1-vanilla-controller-)
-+ [3.  `1-vanilla/FormView1`](#3---1-vanilla-formview1-)
-+ [4.  `1-vanilla/FormView3` : X 버튼을 클릭하거나, 검색어를 삭제하면 검색 결과를 삭제](#4---1-vanilla-formview3----x-------------------------------)
-+ [5.  `1-vanilla/FormView4` : 검색결과 구현 1](#5---1-vanilla-formview4------------1)
-+ [6.  `1-vanilla/ResultView1` : 검색 결과가 보인다.](#6---1-vanilla-resultview1--------------)
-+ [7.  `1-vanilla/ResultView2` : `X` 버튼을 클릭하면 검색폼이 초기화 되고, 검색 결과가 사라진다.](#7---1-vanilla-resultview2-----x-----------------------------------)
-+ [8.  `1-vanilla/ResultView3` : 추천 검색어, 최근 검색어 탭이 검색폼 아래 위치한다.](#8---1-vanilla-resultview3---------------------------------)
-+ [9.  `1-vanilla/TabView1` : 기본으로 추천 검색어 탭을 선택한다.](#9---1-vanilla-tabview1-----------------------)
-+ [10. `1-vanilla/TabView2` : 각 탭을 클릭하면 탭 아래 내용이 변경된다.](#10--1-vanilla-tabview2---------------------------)
-+ [11. `1-vanilla/TabView3` : 최근 검색어, 목록이 탭 아래 위치한다.](#11--1-vanilla-tabview3-------------------------)
-+ [12. `1-vanilla/KeywordView1` :목록에서 검색어를 클릭하면 선택된 검색어로 검색 결과 화면으로 이동](#12--1-vanilla-keywordview1----------------------------------------)
-+ [13. `1-vanilla/KeywordView2` : 검색폼에 선택된 추천 검색어 설정](#13--1-vanilla-keywordview2----------------------)
-+ [14. `1-vanilla/KeywordView3` : 최근 검색어, 목록이 탭 아래 위치한다.](#14--1-vanilla-keywordview3-------------------------)
-+ [15. `1-vanilla/HistoryView1` : 검색일자, 버튼 목록이 탭 아래 위치한다.](#15--1-vanilla-historyview1--------------------------)
-+ [16. `1-vanilla/HistoryView2` : 목록에서 x버튼을 클릭하면 선택된 검색어가 목록에서 삭제](#16--1-vanilla-historyview2---------x-------------------------)
-+ [17. `1-vanilla/HistoryView3` : 탭을 클릭하면 해당 탭으로 이동](#17--1-vanilla-historyview3---------------------)
 
 ### 1. `1-vanilla/scafolding`
 
