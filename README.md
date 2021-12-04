@@ -43,6 +43,7 @@
 - [기본적으로 알아야 될 Javascript 기본 개념](https://github.com/kdh92417/TIL/blob/master/javascript/javascript_basic.md)
 - [Javascript Theory](https://github.com/kdh92417/TIL/blob/master/javascript/javascript_theory.md)
 - [Codeit Javascript 강의 정리](https://github.com/kdh92417/TIL/blob/master/javascript/codeit_javascript.md)
+- [Modern Javascript]()
 
 ### Python
 
@@ -65,6 +66,9 @@
 ### Vuejs
 
 - [Vanilla Javascript](https://github.com/kdh92417/TIL/blob/master/vuejs/vanilla_javascript.md)
+- [Vue.js - Basic](https://github.com/kdh92417/TIL/blob/master/vuejs/vuejs.md)
+- [Vue.js - Component](https://github.com/kdh92417/TIL/blob/master/vuejs/components.md)
+
 
 ### Algorithm
 
