@@ -46,12 +46,12 @@
 - [Web Programming](https://github.com/kdh92417/TIL/blob/master/cs/web_programming.md)
 - [HTTP Protocol](https://github.com/kdh92417/TIL/blob/master/cs/http_protocol.md)
 
-### HTML, CSS
+### HTML and CSS
 
 - [HTML, CSS, Javascript의 개념](https://github.com/kdh92417/TIL/blob/master/html_css/basic%20language%20of%20web.md)
 - [HTML, CSS](https://github.com/kdh92417/TIL/blob/master/html_css/html_css.md)
 
-### Git & Github
+### Git and Github
 
 - [Git and Github](https://github.com/kdh92417/TIL/blob/master/git/git_and_github.md) - 수정중
 - [Pull Request 연습](https://github.com/kdh92417/TIL/blob/master/git/pullrequest_practice.md)
