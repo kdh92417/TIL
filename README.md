@@ -3,24 +3,6 @@
 > 좋은 개발자가 되기 위해 하루동안 학습한 내용이나 개발관련 경험들을 기록한다.
 > 하루를 정리하기 위해 이해한 내용만 기록한다.
 > TIL 은 꾸준함이 생명이라는 사실을 잊지 말자
-
-<br>
-
-- [Today I Learned (TIL)](#today-i-learned--til-)
-  * [작성규칙](#----)
-  * [분류](#--)
-    + [Computer Science](#computer-science)
-    + [HTML, CSS](#html--css)
-    + [Git & Github](#git---github)
-    + [Javascript](#javascript)
-    + [Python](#python)
-    + [DB](#db)
-    + [Vuejs](#vuejs)
-    + [알고리즘 및 자료구조](#-----------)
-    + [Implement as Python](#implement-as-python)
-    + [개념](#--)
-    + [기타](#--)
-    + [면접](#--)
     
 
 <br>
@@ -38,6 +20,21 @@
 
 ## 분류
 
++ [Computer Science](#computer-science)
++ [HTML and CSS](#html-and-css)
++ [Git and Github](#git-and-github)
++ [Javascript](#javascript)
++ [Python](#python)
++ [DB](#db)
++ [Vuejs](#vuejs)
++ [알고리즘 및 자료구조](#-----------)
++ [Implement as Python](#implement-as-python)
++ [개념](#--)
++ [기타](#--)
++ [면접](#--)
+
+<br>
+
 ### Computer Science
 
 - [컴퓨터 구조](https://github.com/kdh92417/TIL/blob/master/cs/computer_structure.md)
@@ -48,7 +45,7 @@
 
 ### HTML and CSS
 
-- [HTML, CSS, Javascript의 개념](https://github.com/kdh92417/TIL/blob/master/html_css/basic%20language%20of%20web.md)
+- [HTML, CSS, Javascript의 개념](https://github.com/kdh92417/TIL/blob/master/html_css/basic_language_of_web.md)
 - [HTML, CSS](https://github.com/kdh92417/TIL/blob/master/html_css/html_css.md)
 
 ### Git and Github
