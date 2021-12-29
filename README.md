@@ -6,6 +6,26 @@
 
 <br>
 
+- [Today I Learned (TIL)](#today-i-learned--til-)
+  * [작성규칙](#----)
+  * [분류](#--)
+    + [Computer Science](#computer-science)
+    + [HTML, CSS](#html--css)
+    + [Git & Github](#git---github)
+    + [Javascript](#javascript)
+    + [Python](#python)
+    + [DB](#db)
+    + [Vuejs](#vuejs)
+    + [알고리즘 및 자료구조](#-----------)
+    + [Implement as Python](#implement-as-python)
+    + [개념](#--)
+    + [기타](#--)
+    + [면접](#--)
+    
+
+<br>
+
+
 ## 작성규칙
 
 - 폴더와 파일명은 영문으로 작성
@@ -26,12 +46,10 @@
 - [Web Programming](https://github.com/kdh92417/TIL/blob/master/cs/web_programming.md)
 - [HTTP Protocol](https://github.com/kdh92417/TIL/blob/master/cs/http_protocol.md)
 
-### HTML, CSS 기초
+### HTML, CSS
 
-- [HTML, CSS, Javascript의 개념](https://github.com/kdh92417/TIL/blob/master/basic/basic%20language%20of%20web.md)
-- [HTML 기초](https://github.com/kdh92417/TIL/blob/master/basic/HTML%20Basic.md)
-- [CSS 기초](https://github.com/kdh92417/TIL/blob/master/basic/CSS.md)
-- [Advanced CSS](https://github.com/kdh92417/TIL/blob/master/basic/advanced_css.md)
+- [HTML, CSS, Javascript의 개념](https://github.com/kdh92417/TIL/blob/master/html_css/basic%20language%20of%20web.md)
+- [HTML, CSS](https://github.com/kdh92417/TIL/blob/master/html_css/html_css.md)
 
 ### Git & Github
 
@@ -43,7 +61,6 @@
 - [기본적으로 알아야 될 Javascript 기본 개념](https://github.com/kdh92417/TIL/blob/master/javascript/javascript_basic.md)
 - [Javascript Theory](https://github.com/kdh92417/TIL/blob/master/javascript/javascript_theory.md)
 - [Codeit Javascript 강의 정리](https://github.com/kdh92417/TIL/blob/master/javascript/codeit_javascript.md)
-- [Modern Javascript]()
 
 ### Python
 
@@ -57,12 +74,6 @@
 
 - [Chapter 9. Transaction](https://github.com/kdh92417/TIL/blob/master/db/ms_sql.md)
 
-
-### Django
-
-- [장고 기본 개념 공부 - Tango with Django](https://github.com/kdh92417/TIL/blob/master/django/tango_with_django.md)
-- [Django Rest Framework 공부](https://github.com/kdh92417/TIL/blob/master/django/drf.md)
-
 ### Vuejs
 
 - [Vanilla Javascript](https://github.com/kdh92417/TIL/blob/master/vuejs/vanilla_javascript.md)
@@ -70,31 +81,28 @@
 - [Vue.js - Component](https://github.com/kdh92417/TIL/blob/master/vuejs/components.md)
 
 
-### Algorithm
+### 알고리즘 및 자료구조
 
 - [문제 풀이 및 알고리즘 공부](https://github.com/kdh92417/TIL/blob/master/algorithm/algorithm.md)
-
-### 자료구조
-
 - [자료구조 in Python](https://github.com/kdh92417/TIL/blob/master/data_structure/data_structure.md)
 
 ### Implement as Python
 
-- [씨리얼 넘버 생성 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/create_serial.py)
-- [점수를 입력받아 등급과 학점 평균 산출 프로그램](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/grade_average_calculator.py)
-- [GUI Calculator with PyQt5](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/calculator.py)
-- [주민번호 정규표현식으로 마킹하여 출력하기](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/marking_number.py)
-- [Apache Log 파일을 CSV 파일로 Parsing](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/parsing_log/parsing_apache_log.md)
-- [서버 구축 및 Ajax를 이용한 데이터 통신](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/programmers/readme.md)
-- [PyGame으로 오목게임 만들기 with OOP](https://github.com/kdh92417/TIL/blob/master/algorithm/try_implementing_with_python/omok)
+- [만들어본 프로그램들](https://github.com/kdh92417/TIL/blob/master/program/readme.md)
 
-### 조사해본 개념들
+### 개념
 
 - [개념 정리](https://github.com/kdh92417/TIL/blob/master/data/unknown_theory.md)
-- [기술 면접 준비](https://github.com/kdh92417/TIL/blob/master/etc/technical_interview.md)
+
 
 ### 기타
 
 - [VIM 정리](https://github.com/kdh92417/TIL/blob/master/etc/vim.md)
 - [Docker & Docker Compose](https://github.com/kdh92417/TIL/blob/master/etc/docker.md)
+
+### 면접
+
+- [기술 면접 준비](https://github.com/kdh92417/TIL/blob/master/etc/technical_interview.md)
+
+
 
