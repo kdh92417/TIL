@@ -90,7 +90,7 @@
 ### 개념
 
 - [개념 정리](https://github.com/kdh92417/TIL/blob/master/data/unknown_theory.md)
-
+- [모든 개발자의 실무를 위한 필수 기본기]()
 
 ### 기타
 
