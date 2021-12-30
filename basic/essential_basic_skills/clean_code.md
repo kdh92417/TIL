@@ -4,10 +4,37 @@
 
 ## 목차
 
-[TOC]
+- [1.네이밍](#1-네이밍)
+  * [컨벤션](#---)
+  * [네이밍](#---)
+  * [Tip](#tip)
+- [2. 주석, 포맷팅](#2--------)
+  * [2. 1 주석](#2-1---)
+  * [2. 2 관용적으로 사용되는 키워드](#2-2---------------)
+  * [2. 3 포맷팅](#2-3----)
+- [3. 함수](#3---)
+  * [3. 1 함수의 역할은 하나만 - SRP (Single Responsibility Principle)](#3-1---------------srp--single-responsibility-principle-)
+  * [3. 2 반복하지 말자 - DRY (Don’t Repeat Yourself)](#3-2-----------dry--don-t-repeat-yourself-)
+  * [3. 3 파리미터 수는 적게 유지하자](#3-3----------------)
+  * [3. 4 사이드 이펙트를 잘 핸들링하자](#3-4-----------------)
+  * [순수함수란?](#------)
+- [4. 클래스](#4----)
+  * [4. 1 단일 책임 원칙(SRP) 지키기](#4-1----------srp-----)
+  * [4. 2 응집도를 높이자](#4-2---------)
+  * [4. 3 변경하기 쉽게 만들자](#4-3------------)
+- [5. 에러 핸들링](#5-------)
+  * [5. 1 - 오류 코드보다는 예외 사용하기](#5-1-------------------)
+  * [예외 클래스 잘 정의하기](#-------------)
+  * [에러 핸들링 잘하기](#----------)
+- [6. 코드 Indent 줄이기(Guard Clausing, Polymorphism)](#6----indent-----guard-clausing--polymorphism-)
+  * [6. 1 Gaurd clause](#6-1-gaurd-clause)
+  * [6. 2 Polymorphism(다형성)](#6-2-polymorphism-----)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
-## 1.네이밍
+
+## 1. 네이밍
 
 ---
 
@@ -834,5 +861,3 @@ function createUser(email, password) {
             for employee in self.employees:
                 employee.work()
     ```
-  
-[TOC]
