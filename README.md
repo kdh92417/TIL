@@ -76,7 +76,7 @@
 - [Vanilla Javascript](https://github.com/kdh92417/TIL/blob/master/vuejs/vanilla_javascript.md)
 - [Vue.js - Basic](https://github.com/kdh92417/TIL/blob/master/vuejs/vuejs.md)
 - [Vue.js - Component](https://github.com/kdh92417/TIL/blob/master/vuejs/components.md)
-
+- [Trello를 통해 배우는 Vue.js 실전기술](https://github.com/kdh92417/TIL/blob/master/vuejs/trello_vuejs.md)
 
 ### 알고리즘 및 자료구조
 

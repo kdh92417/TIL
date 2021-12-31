@@ -5,32 +5,30 @@
 ## 목차
 
 - [1.네이밍](#1-네이밍)
-  * [컨벤션](#---)
-  * [네이밍](#---)
+  * [컨벤션](#컨벤션)
+  * [네이밍](#네이밍)
   * [Tip](#tip)
-- [2. 주석, 포맷팅](#2--------)
-  * [2. 1 주석](#2-1---)
-  * [2. 2 관용적으로 사용되는 키워드](#2-2---------------)
-  * [2. 3 포맷팅](#2-3----)
-- [3. 함수](#3---)
-  * [3. 1 함수의 역할은 하나만 - SRP (Single Responsibility Principle)](#3-1---------------srp--single-responsibility-principle-)
-  * [3. 2 반복하지 말자 - DRY (Don’t Repeat Yourself)](#3-2-----------dry--don-t-repeat-yourself-)
-  * [3. 3 파리미터 수는 적게 유지하자](#3-3----------------)
-  * [3. 4 사이드 이펙트를 잘 핸들링하자](#3-4-----------------)
-  * [순수함수란?](#------)
-- [4. 클래스](#4----)
-  * [4. 1 단일 책임 원칙(SRP) 지키기](#4-1----------srp-----)
-  * [4. 2 응집도를 높이자](#4-2---------)
+- [2. 주석, 포맷팅](#2-주석--포맷팅)
+  * [2. 1 주석](#2-1-주석)
+  * [2. 2 관용적으로 사용되는 키워드](#2-2-관용적으로-사용되는-키워드)
+  * [2. 3 포맷팅](#2-3-포맷팅)
+- [3. 함수](#3-함수)
+  * [3. 1 함수의 역할은 하나만 - SRP (Single Responsibility Principle)](#3-1-함수의-역할은-하나만)
+  * [3. 2 반복하지 말자 - DRY (Don’t Repeat Yourself)](#3-2-반복하지-말자)
+  * [3. 3 파리미터 수는 적게 유지하자](#3-3-파리미터-수는-적게-유지하자)
+  * [3. 4 사이드 이펙트를 잘 핸들링하자](#3-4-사이드-이펙트를-잘-핸들링하자)
+  * [순수함수란?](#-순수함수란-)
+- [4. 클래스](#4-클래스)
+  * [4. 1 단일 책임 원칙(SRP) 지키기](#4-1-단일-책임-원칙-srp-지키기)
+  * [4. 2 응집도를 높이자](#4-2-응집도를-높이자)
   * [4. 3 변경하기 쉽게 만들자](#4-3------------)
-- [5. 에러 핸들링](#5-------)
-  * [5. 1 - 오류 코드보다는 예외 사용하기](#5-1-------------------)
-  * [예외 클래스 잘 정의하기](#-------------)
-  * [에러 핸들링 잘하기](#----------)
-- [6. 코드 Indent 줄이기(Guard Clausing, Polymorphism)](#6----indent-----guard-clausing--polymorphism-)
+- [5. 에러 핸들링](#5-에러-핸들링)
+  * [5. 1 오류 코드보다는 예외 사용하기](#5-1-오류-코드보다는-예외-사용하기)
+  * [예외 클래스 잘 정의하기](#-예외-클래스-잘-정의하기)
+  * [에러 핸들링 잘하기](#-에러-핸들링-잘하기)
+- [6. 코드 Indent 줄이기(Guard Clausing, Polymorphism)](#6-코드-indent-줄이기)
   * [6. 1 Gaurd clause](#6-1-gaurd-clause)
-  * [6. 2 Polymorphism(다형성)](#6-2-polymorphism-----)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+  * [6. 2 Polymorphism(다형성)](#6-2-polymorphism)
 
 
 
@@ -196,7 +194,9 @@ Horizontal Formatting
 
 ---
 
-### 3. 1 함수의 역할은 하나만 - SRP (Single Responsibility Principle)
+### 3. 1 함수의 역할은 하나만
+
+> SRP (Single Responsibility Principle)
 
 - as-is
     
@@ -264,7 +264,9 @@ Horizontal Formatting
     ```
     
 
-### 3. 2 반복하지 말자 - DRY (Don’t Repeat Yourself)
+### 3. 2 반복하지 말자
+
+> DRY (Don’t Repeat Yourself)
 
 - as-is
     
@@ -576,7 +578,7 @@ function createUser(email, password) {
 
 ## 5. 에러 핸들링
 
-### 5. 1 - 오류 코드보다는 예외 사용하기
+### 5. 1 오류 코드보다는 예외 사용하기
 
 > 오류 코드를 사용하게 되면 상단에 오류인지 확인하는 불필요한 로직이 들어가게 된다.  오류의 범주에 들어가지 않은 상태를 나타내는 것이라면, 예외(`Exception` )로 명시적으로 에러 처리를 표현해주는 것이 좋다.
 > 
@@ -748,7 +750,7 @@ function createUser(email, password) {
 <br>
     
 
-## 6. 코드 Indent 줄이기(Guard Clausing, Polymorphism)
+## 6. 코드 Indent 줄이기
 
 > `if-else` 조건문을 많이 사용하게 되면 코드 라인이 길어지고 indent가 많아져 가독성이 떨어지는 문제가 발생한다. 이때 `Guard Clausing` 과 `Polymorhism(다형성)` 을 사용하면 코드를 클린하게 짤 수 있다.
 > 
@@ -798,7 +800,7 @@ function createUser(email, password) {
     ```
     
 
-### 6. 2 Polymorphism(다형성)
+### 6. 2 Polymorphism
 
 - as-is
     
