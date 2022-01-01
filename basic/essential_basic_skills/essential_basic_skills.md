@@ -6,7 +6,7 @@
 - https://www.inflearn.com/course/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%8B%A4%EB%AC%B4-%EA%B8%B0%EB%B3%B8%EA%B8%B0
 
 
-
 ### 공부한 내용
 
 - [깔끔한 코드를 위하여! 클린코드](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/clean_code.md)
+- [프로그래밍 패러다임]
