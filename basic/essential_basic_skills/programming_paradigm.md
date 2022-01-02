@@ -10,6 +10,8 @@
 - 객체 지향 프로그래밍 : 객체의 책임과 협력을 중심으로 설계
 
 
+<br>
+
 ## Table of Contents
 
 
@@ -18,26 +20,22 @@
   + [Example](#example)
   + [Pros and Cons](#pros-and-cons)
   + [Conclusion](#conclusion)
-
-
 - [2. Object Oriented Programming](#2-object-oriented-programming)
   * [Example](#example)
   * [Pros and Cons](#pros-and-cons)
-
-
 - [3. Functional Programming](#3-functional-programming)
   * [Outline](#outline)
   * [Pure Function](#pure-function)
   * [Why don't you want to have an external state?](#why-don-t-you-want-to-have-an-external-state-)
   * [Functional Programming Example](#functional-programming-example)
   * [Pros and Cons](#pros-and-cons-1)
-
-
 - [4. Organize](#4-organize)
   * [Procedure Oriented Programming](#procedure-oriented-programming)
   * [Object Oriented Programming](#object-oriented-programming)
   * [Functional Programming](#functional-programming)
   
+
+<br>
 
 ## 1. Procedure Oriented
 
