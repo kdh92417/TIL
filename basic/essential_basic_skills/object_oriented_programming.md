@@ -223,3 +223,178 @@
 → 구현(저수준 코드)을 의존하기 보단 인터페이스(고수준) 의존하게 되어 결합도를 낮출 수 있다. (**다형성**)
 
 또한 `Student(School)` , `Teacher(School)` 같은 구현클래스가 `School` 클래스를 상속받아 구현 클래스간의 관계를 파악하기도 쉽다.
+
+<br>
+
+# Features of object-oriented
+
+## 1. Responsibility and Cooperation
+
+### 1.1 Responsibility
+
+<br>
+
+> 책임은 한 객체가 특정하게 수행해야하는 범위와 기능을 뜻한다.
+
+<br>
+
+- 사람은 ‘운전’이라는 행위를 하게 된다. → `User` 객체는 운전하는 것에 대한 책임이 있다.
+    
+    ```python
+    class User:
+    		def __init__(self) -> None:
+    				pass
+    
+    		def drive(self) -> None:
+    				pass
+    ```
+    
+<br>
+
+- 차량은 앞뒤로 가능 기능을 제공 → `MorningCar` 객체는 가속과 감속에 대한 책임이 있다.
+    
+    ```python
+    class MorningCar:
+        def __init__(self) -> None:
+            pass
+    
+        def accelerate(self) -> None:
+            pass
+    
+        def decelerate(self) -> None:
+            pass
+    ```
+
+<br>
+
+> SRP (Signle Responsibility Principle)
+>
+>하나의 객체는 하나의 책임만 가지도록 설계하는 것이 일반적으로 좋다. 왜냐하면,
+>
+>- 객체의 정체성이 명확하고, 변경에 용이 하며, 추후 재사용 가능하고
+>- 높은 응집도와 낮은 결합도를 유지할 수 있기 때문
+
+<br>
+
+### 1.2 Cooperation
+
+위에서 정의한 `User` 객체와 `MorningCar` 객체의 기능을 구현해보자
+
+- `User`
+    
+    ```python
+    class User:
+        def __init__(self) -> None:
+            self.car = MorningCar()  # User는 MorningCar를 의존하고 있습니다.
+    
+        def drive(self) -> None:
+            self.car.accelerate()  # User는 MorningCar가 제공하는 공개 메서드를 사용합니다.
+    ```
+    
+<br>
+
+- `MorningCar`
+    
+    ```python
+    class MorningCar:
+        def __init__(self):
+             self.speed = 0 
+             self._fuel = 0  # 파이썬 특성상 private을 _ prefix를 붙여 암묵적으로 사용함
+    						
+        def accelerate(self):
+            self.speed += 1
+    
+        def decelerate(self):
+            self.speed -= 1
+    ```
+<br>
+
+- 사람이 운전하는 상황
+    - 결과적으로 `User` , `MorningCar`  객체를 각자 책임에 맞게 설계하고 `User` 가 `MorningCar` 객체를 호출하여 구현
+    - 이렇게 객체가 서로 필요에 따라 의존하는 것을 `협력` 이라고 표현한다.
+    
+<br>
+
+> **책임 주도 설계**
+>
+> 객체 지향에서 필요한 객체들의 책임을 중심으로 시스템을 설계하는 방법을 뜻함
+>
+> 하나의 책임 → 하나의 객체 → 책임 곧 객체의 정체성
+>
+> 책임주도 설계로 시스템을 설계해나가면
+> - 객체들의 정체성이 명확
+> - 높은 응집도와 낮은 결합도 유지
+> - 시스템은 객체들의 협력으로 로직을 진행
+
+<br>
+
+## 2. Abstract
+
+> 추상화란?
+>
+> 어떤 구체적인 애들로부터 공통적인 특징들을 뽑아서 만들어 놓은 고수준의 개념체
+> 
+
+<br>
+
+- `MorningCar` 객체와 `PorscheCar` 객체의 차량이 있다면 공통특징을 뽑아서 `Car` 라는 추상화 객체를 만들 수 있다.
+    
+    ```python
+    from abc import ABC
+    
+    # 모든 차량의 공통적인 특징을 뽑아서 만든 추상화 객체
+    class Car(ABC):
+        @abstractmethod
+        def accelerate(self) -> None:
+            pass
+    
+        @abstractmethod
+        def decelerate(self) -> None:
+            pass
+    ```
+    
+
+- 추상화 객체인 `Car` 를 상속받아 `MorningCar` 객체와 `PorscheCar` 객체를 구현할 수 있다.
+    
+    ```python
+    class MorningCar(Car):
+        def __init__(self) -> None:
+             self.speed = 0
+             self._fuel = 0
+    
+        def accelerate(self) -> None:
+            self.speed += 1
+    
+        def decelerate(self) -> None:
+            self.speed -= 1
+    
+    class PorscheCar(Car):
+        def __init__(self) -> None:
+            self.speed = 0
+            self._fuel = 0
+    
+        def accelerate(self) -> None:
+            self.speed += 3
+    
+        def decelerate(self) -> None:
+            self.speed -= 3
+    ```
+    
+
+- 사람 입장에서는 특정 차량이 아니라 추상적인 `Car` 라는 객체만 알면 된다.
+    
+    ```python
+    class User:
+        def __init__(self, car: Car) -> None:
+            self.car = car
+    
+        def drive(self):
+            self.car.accelerate()
+    
+    porsche = User(PorscheCar())
+    porsche.drive()
+    ```
+    
+
+> 이렇게 구체적인 객체들로부터 공통점을 생각하여 한 차원 높은 개념을 만들어 내는(생각해내는) 것을 `추상화(abstraction)` 라고 한다.
+>
