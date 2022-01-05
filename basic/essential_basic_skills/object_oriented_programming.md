@@ -352,7 +352,8 @@
         def decelerate(self) -> None:
             pass
     ```
-    
+  
+<br>
 
 - 추상화 객체인 `Car` 를 상속받아 `MorningCar` 객체와 `PorscheCar` 객체를 구현할 수 있다.
     
@@ -380,6 +381,7 @@
             self.speed -= 3
     ```
     
+<br>
 
 - 사람 입장에서는 특정 차량이 아니라 추상적인 `Car` 라는 객체만 알면 된다.
     
@@ -394,7 +396,7 @@
     porsche = User(PorscheCar())
     porsche.drive()
     ```
-    
+
+<br>
 
 > 이렇게 구체적인 객체들로부터 공통점을 생각하여 한 차원 높은 개념을 만들어 내는(생각해내는) 것을 `추상화(abstraction)` 라고 한다.
->
