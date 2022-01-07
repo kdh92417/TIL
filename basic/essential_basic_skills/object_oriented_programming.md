@@ -1,3 +1,35 @@
+
+## 목차
+
+- [Basic concepts of object-oriented](#basic-concepts-of-object-oriented)
+  * [1. Class and Instance](#1-class-and-instance)
+    + [1. 1 Class](#1-1-class)
+    + [1.2 Instance](#12-instance)
+  * [2. Attributes and Methods](#2-attributes-and-methods)
+    + [2. 1 Attribute](#2-1-attribute)
+    + [2.2 Methods](#22-methods)
+  * [3. Inheritance](#3-inheritance)
+  * [4. Interface](#4-interface)
+    + [Why use interfaces](#why-use-interfaces)
+    
+
+- [Features of object-oriented](#features-of-object-oriented)
+  * [1. Responsibility and Cooperation](#1-responsibility-and-cooperation)
+    + [1.1 Responsibility](#11-responsibility)
+    + [1.2 Cooperation](#12-cooperation)
+  * [2. Abstract](#2-abstract)
+  * [2. Polymorphism And Dependency injection](#2-polymorphism-and-dependency-injection)
+    + [2.1 Concepts](#21-concepts)
+    + [2.2 TIP](#22-tip)
+  * [3. Encapsulation](#3-encapsulation)
+    + [3. 1 When not encapsulated](#3-1-when-not-encapsulated)
+    + [3. 2 When encapsulated](#3-2-when-encapsulated)
+  * [4. Conclusion](#4-conclusion)
+    + [책임과 협력](#책임과-협력)
+    + [추상화](#추상화)
+    + [다형성](#다형성)
+    + [캡슐화](#캡슐화)
+
 # Basic concepts of object-oriented
 
 ## 1. Class and Instance
@@ -400,3 +432,188 @@
 <br>
 
 > 이렇게 구체적인 객체들로부터 공통점을 생각하여 한 차원 높은 개념을 만들어 내는(생각해내는) 것을 `추상화(abstraction)` 라고 한다.
+
+<br>
+
+## 2. Polymorphism And Dependency injection
+
+### 2.1 Concepts
+
+- 다형성(Polymorphism)과 의존성 주입(Dependency injection) 예시
+    
+    ```python
+    # 모닝 차량을 운전하고 싶을 때
+    # User클래스에 MorningCar 주입 -> MorningCar를 User클래스에 의존성 주입
+    user = User(MorningCar())
+    user.drive()
+    
+    # 포르쉐 차량을 운전하고 싶을 때
+    # User클래스에 PorscheCar 주입 -> PorscheCar를 User클래스에 의존성 주입
+    user = User(PorscheCar())
+    user.drive()
+    ```
+    
+
+- `User` 클래스가 `Car` 의 자식클래스인 `MorningCar` , `PorscheCar` 객체를 생성자에서 파라미터로 넘겨 각기 다른 차를 운전하는 `user` 를 생성할 수 있는데, 이런 특성을 `다형성(Polymorphism)` 이라 한다.
+    
+    
+- 또한 이때 외부에서 실제로 의존하는 객체(`MorningCar` , `PorscheCar` )를 만들어 넘겨주는 패턴을 `의존성 주입(Dependency injection)` 이라 한다.
+
+<br>
+
+### 2.2 TIP
+
+> **OCP (Open-Close Principle)**
+>
+>소프트웨어는 확장에대해 열려 있어야 하고, 수정에 대해서는 닫혀 있어야한다는 원칙
+>즉 요구사항이 바뀌어 기존 코드를 변경할 때, 기존 코드를 수정하지 않고 새로운 코드를 추가하는 것이 좋다는 것
+
+<br> 
+
+## 3. Encapsulation
+
+> **캡슐화(Encapsulation)** 는 객체 내부의 데이터나 구체적인 로직을 외부에서 모르고 사용해도 문제가 없도록 하는 특성
+
+<br>
+
+### 3. 1 When not encapsulated
+
+- Code Example
+    
+    ```python
+    class MorningCar:
+        def __init__(self, fuel: int) -> None:
+            self.speed = 0
+            self.current_fuel = fuel
+            self.max_fuel = 50
+            if fuel > self.max_fuel:
+                raise Exception(f"최대로 넣을 수 있는 기름은 {self.max_fuel}L 입니다")
+    
+        def accelerate(self) -> None:
+            if self.current_fuel == 0:
+                raise Exception("남아있는 기름이 없습니다")
+            self.speed += 1
+            self.current_fuel -= 1
+    
+        def decelerate(self) -> None:
+            if self.current_fuel == 0:
+                raise Exception("남아있는 기름이 없습니다")
+            self.speed -= 1
+            self.current_fuel -= 1
+    ```
+
+<br>
+
+- Use `MorningCar` object
+    
+    ```python
+    # 차량 생성
+    >>> car = MorningCar(30)
+    
+    # 차량 주행
+    >>> car.accelerate()
+    
+    # 차량에 필요한 기름 주유
+    >>> car.current_fuel += 50
+    
+    # 차량의 남은 주유랑을 퍼센트로 확인
+    >>> f"{car.current_fuel / car.max_fuel * 100} %"
+    ```
+
+<br>
+    
+
+- 위의 캡슐화하지 않은 `MorningCar` 객체를 사용함으로써 클래스변수에 직접 접근하여 연산하게되는데, 이러면 `car.max_fuel` 을 초과한 값이 `current_fuel` 클래스변수에 들어갈 수 있어 버그에 취약한 코드가 된다.
+
+- 이렇게 캡슐화 되지 않은 코드는
+    - 본인의 책임을 다하고 있지 않으며(SRP 위반)
+    - 추후 코드 변화에도 매우 취약하다.
+    - e.g. `MorningCar` 객체의 `fuel` 변수의 이름이 다른 이름으로 바뀌게 되면 → `MorningCar` 를 사용하는 모든 코드를 수정 해야됨
+        
+<br>
+
+### 3. 2 When encapsulated
+
+- `MorningCar` 클래스를 캡슐화
+    - 외부에서 이 객체에 필요로 하는 기능을 메서드로 제공
+    - 객체의 속성을 직접 수정하거나 가져다 쓰지 못하도록 함 → `정보은닉` 이라고도 함
+
+<br>
+
+- Encapsulation
+    
+    ```python
+    class MorningCar:
+        def __init__(self, fuel: int) -> None:
+            self.speed = 0
+            self._current_fuel = fuel  # 비공개형 변수로 바꿉니다.
+            self._max_fuel = 50  # 비공개형 변수로 바꿉니다.
+            if fuel > self._max_fuel:
+                raise Exception(f"최대로 넣을 수 있는 기름은 {self.max_fuel}L 입니다!")
+    
+        def accelerate(self) -> None:
+            if self._current_fuel == 0:
+                raise Exception("남아있는 기름이 없습니다!")
+            self.speed += 1
+            self._current_fuel -= 1
+    
+        def decelerate(self) -> None:
+            if self._current_fuel == 0:
+                raise Exception("남아있는 기름이 없습니다!")
+            self.speed -= 1
+            self._current_fuel -= 1
+    
+        # 차량에 주유할 수 있는 기능을 메서드로 제공하고, 구체적인 로직은 객체 외부에서 몰라도 되도록 메서드 내에 둡니다.
+        def refuel(self, fuel: int) -> None:
+            if self._current_fuel + fuel > self._max_fuel:
+                raise Exception(f"추가로 더 넣을 수 있는 최대 연료는 {self._max_fuel - self._current_fuel}L 입니다!")
+            self._current_fuel += fuel
+    
+        # 차량의 남은 주유랑을 퍼센트로 확인하는 기능을 메서드로 제공합니다.
+        def get_current_fuel_percentage(self) -> str:
+            return f"{self._current_fuel / self._max_fuel * 100} %"
+    
+    ```
+    
+    ```python
+    # 차량 생성
+    >>> car = MorningCar(30)
+    
+    # 차량 주행
+    >>> car.accelerate()
+    
+    # 차량에 필요한 기름 주유 (예외 발생함)
+    >>> car.refuel(50)
+    
+    # 차량의 남은 주유랑을 퍼센트로 확인
+    >>> car.get_current_fuel_percentage()
+    ```
+
+<br>
+
+- `MorningCar` 클래스를 사용하는 클라이언트 `MorningCar` 의 속성에 직접 접근하여 연산할 필요가 없다.
+    - `MorningCar` 가 제공하는 퍼블릭메서드를 사용하면 된다.
+    - `MorningCar` 의 속성 `_current_fuel` 이나 `_max_fuel` 등의 값이 바뀌어도 클라이언트의 코드는 바뀌지 않는다. → 수정에 더 용이한 코드가 됨
+    
+<br>
+
+## 4. Conclusion
+
+### 책임과 협력
+
+- 객체지향은 객체들의 책임과 협력으로 이루어 진다.
+
+### 추상화
+
+- 추상화를 통해 객체들의 공통 개념을 뽑아 한 차원 더 높은 객체를 만들 수 있다.
+    - 객체를 추상화한 클래스를 만든 후, 이 클래스를 상속받아 실제 구체적인 책임을 담당하는 객체를 생성할 수 있다. → 구현
+
+### 다형성
+
+- 다형성으로 코드는 수정과 확장에 유연
+
+### 캡슐화
+
+- 캡슐화를 통해 객체 내부의 정보와 구체적인 로직을 숨길 수 있다. → 정보은닉
+    - 외부에선 공개메서드를 사용
+    - 수정과 확장에 유연
