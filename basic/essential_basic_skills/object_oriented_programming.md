@@ -617,3 +617,212 @@
 - 캡슐화를 통해 객체 내부의 정보와 구체적인 로직을 숨길 수 있다. → 정보은닉
     - 외부에선 공개메서드를 사용
     - 수정과 확장에 유연
+
+<br>
+
+## 4. Dependency
+
+> 변경이 전파되기 때문에 의존성이 중요
+
+
+### 4.1 정적 의존성 (컴파일 의존성)
+
+- 객체 A입장에서 객체 B의 존재를 알고 있을 때, ‘객체 A는 객체 B에 의존성이 있다’라고 한다.
+    
+    → 코드 레벨에서 직접적으로 두 객체의 의존 관계를 파악할 수 있을 때 `정적 의존성` 이 있다고 한다.
+    
+    ```python
+    # Driver 클래스는 Car 클래스의 존재를 알고 있다. -> Driver클래스는 Car클래스에 의존성이 있다.
+    class Driver:
+        def __init__(self, name, car: Car) -> None:
+            self.name = name
+            self.car = car
+    ```
+    
+    → `Driver` 객체가 `Car` 객체에 `정적 의존성` 이 있다.
+    
+<br>
+
+### 4. 2 동적 의존성 (런타임 의존성)
+
+> 코드 레벨이 아닌 실제 런타임 환경에서 동적으로 의존 관계를 형성하는 것
+> 
+
+- 아래 코드에서 `Driver` 객체는 `Car` 객체의 정적 의존성이 있지만 `Boxter` 객체와 `Panamera` 객체에는 의존성이 없다.
+    
+    ```python
+    from abc import ABC, abstractmethod
+    
+    class Car(ABC):
+        @abstractmethod
+        def car_type(self) -> None:
+            pass
+    
+    class Boxter(Car):
+        def car_type(self) -> str:
+            return 'Open Car'
+    
+    class Panamera(Car):
+        def car_type(self) -> str:
+            return 'Sport Sedan'
+    
+    class Driver:
+    		# 추상 클래스 혹은 인터페이스를 파라미터 타입으로 초기화
+        def __init__(self, name, car: Car) -> None:
+            self.name = name
+            self.car = car
+    
+        def drive(self) -> None:
+            print(f'{self.name}이 {self.car.car_type()}을 운전합니다.')
+    ```
+    
+
+- 코드가 실행될 때(런타임 환경) `Boxter` , `Panamera` 에 동적 의존성을 만들 수 있다.
+    
+    ```python
+    # 구현클래스를 인자로 넘긴다. -> 동적으로 의존성 생성
+    boxter = Driver('adam', Boxter()) 
+    panamera = Driver('eve', Panamera())
+    
+    boxter.drive()  # adam이 Open Car을 운전합니다.
+    panamera.drive()  # eve이 Sport Sedan을 운전합니다.
+    ```
+    
+
+> 위와 같이 정적 의존성 대상을 고수준코드(`Car`)로 동적 의존성 대상을 저수준 코드(`Boxter` , `Panamera`) 로 넣어주게 되면 유연한 설계가 가능해진다.
+
+<br>
+
+## 5. Coupling and Cohesion
+
+![결합도와 응집도](https://yansfil.github.io/awesome-class-materials/assets/img/cohesion-coupling.5549777b.png)
+
+> 객체지향에서 좋은 설계란? ‘낮은 결합도(Coupling)와 높은 응집도(Cohesion)를 가진 설계’ 라고 말한다.
+> 
+
+### 5. 1 Cohesion
+
+> 객체의 책임에 맞게 속성과 메서드가 유기적으로 결합되어 있는 정도를 `응집도` 라고 한다.
+> 
+
+- 응집도를 높게 코드를 작성하면 → 관령성이 높은 속성과 메서드가 모인다.
+    
+    → 흐름을 읽기 편해지고, 
+    
+    → 불필요한 속성과 메서드를 줄일 수 있어 더 탄탄한 코드를 작성할 수 있다.
+    
+- 응집도가 낮은 경우
+    
+    ```python
+    class LowCohesion:
+        def __init__(self):
+            self.a = ...
+            self.b = ...
+            self.c = ...
+        
+        def process_a(self):
+            print(self.a)
+        
+        def process_b(self):
+            print(self.b)
+        
+        def process_c(self):
+            print(self.c)
+    ```
+    
+- 응집도가 높은 경우
+    
+    ```python
+    class HighCohesion:
+        def __init__(self):
+            self.abc = ...
+        
+        def process_a(self):
+            self.abc.process_a()
+        
+        def process_b(self):
+            self.abc.process_b()
+        
+        def process_c(self):
+            self.abc.process_c()
+    ```
+
+<br>    
+
+### 5. 2 Coupling
+
+> 객체간 의존하는 정도(정적 의존성)를 `결합도` 라 한다.
+> 
+
+- `결합도` 가 높을 수록 (한 객체가 다른 객체의 정보(정보, 메서드)를 많이 알 수록)
+    - 의존하는 객체의 속성이나 메서드가 수정 → 다른 객체 역시 영향을 받는다.
+    - 따라서, 객체를 생성하거나 내부의 로직을 이해하는 데 비용이 커짐
+
+- `결합도` 를 낮게 유지할 수 있는 방향으로 코드를  짜야됨
+    - 객체지향 설계에서는 객체 간의 협력이 필수 → 의존 관계를 없애는 것은 불가능
+    - 결합도를 낮추기 위해서는
+        - 캡슐화를 통해 내부 구현 로직을 숨기고 외부로 노출할 메서드를 추상화
+        - 팩토리 패턴, 파사드 패턴과 같은 디자인 패턴을 활용
+
+- `결합도` 가 높은 경우
+    
+    ```python
+    class Developer:
+        def drink_coffee(self):
+            ...
+        
+        def turn_on_computer(self):
+            ...
+        
+        def open_ide(self):
+            ...
+        
+        ...
+    
+    class Company:
+        def make_work(self):
+            developer = Developer()
+            print(f"{developer.name}가 일을 시잡합니다!")
+            developer.drink_coffee()
+            developer.turn_on_computer()
+            developer.open_ide()
+            ...
+    ```
+    
+
+- 캡슐화를 통해 `결합도` 가 낮춘 경우
+    
+    ```python
+    class Developer:
+        def develop(self):
+            print(f"{self.name}가 일을 시잡합니다!")
+            self.drink_coffee()
+            self.turn_on_computer()
+            self.open_ide()
+            ...
+        
+        def drink_coffee(self):
+            ...
+        
+        def turn_on_computer(self):
+            ...
+        
+        def open_ide(self):
+            ...
+        
+        ...
+    
+    class Company:
+        def make_project(self):
+            developer = Developer()
+            developer.develop()
+    ```
+    
+<br>
+
+### 5. 3 Summary
+
+객체지향에서의 좋은 설계란?
+
+- 개별 객체에는 책임에 따른 기능들이 충분히 모여있고 → `높은 응집도`
+- 이런 객체들이 서로 협력하는 과정에서 의존하는 정도를 최소한으로 만드는 것 → `낮은 결합도`
