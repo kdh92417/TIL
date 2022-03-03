@@ -1,9 +1,3 @@
-# Programmers
-
-> 프로그래머스 SQL 강의를 듣고 매주 제출한 과제와 피드백을 정리
-
-## Programmers SQL / DB Essentials
-
 ### 1주차 과제
 
 - 9문제중 7문제 반 정답

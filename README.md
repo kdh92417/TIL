@@ -68,7 +68,7 @@
 ### DB
 
 - [Chapter 9. Transaction](https://github.com/kdh92417/TIL/blob/master/db/ms_sql.md)
-- [Programmers SQL/DB Essentials 강의](https://github.com/kdh92417/TIL/blob/master/db/programmers_sql_essentials/1_weekly.md)
+- [Programmers SQL/DB Essentials 강의](https://github.com/kdh92417/TIL/blob/master/db/programmers_sql_essentials/readme.md)
 
 ### Vuejs
 

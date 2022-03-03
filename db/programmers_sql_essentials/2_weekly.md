@@ -1,6 +1,11 @@
 # 2주차 과제
 
 
-## IE 방식 ERD
+## 1. IE 표기법 ERD
 
-![ERD](https://user-images.githubusercontent.com/58774316/156386671-5bb7ce90-8609-4607-a78e-b1f55ab46e84.png)
+![ERD](https://user-images.githubusercontent.com/58774316/156563549-e9fb0234-3358-4d07-a7d8-69cc0003ee95.png)
+
+## 2. IDEF1X 표기법 ERD (SqlDBM)
+
+![ERD](https://user-images.githubusercontent.com/58774316/156563692-4a8452f2-dda0-46f7-afd6-e5a21c5f8ab3.png)
+
