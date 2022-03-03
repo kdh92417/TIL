@@ -1,5 +1,6 @@
 # 2주차 과제
 
+> ClassModels DB를 IE 표기법과 IDEF1X 표기법으로 작성해보기
 
 ## 1. IE 표기법 ERD
 
