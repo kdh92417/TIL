@@ -45,9 +45,27 @@ ORDER BY [컬럼명]
 
 # 2. 순수 관계 연산자 JOIN
 
+## 2.1 JOIN 연산
+
+- 형식이 다른 두개의 테이블을 합치는 것
 
 
+### 다중 조인의 실행계획 (Execution Plans)
+Query optimizer에 의해서 결정 (내부적으로 가장빠른 순서를 결정하여 조인순서를 자동으로 결정)
 
+### WHERE절 조인
+- 검색 조건과 조인 조건이 혼재된 형태
+- INNER JOIN 연산만 제공
 
+### FROM절 조인
+- INNER JOIN
+- NATURAL JOIN
+- OUTER JOIN 
+- CROSS JOIN
 
+-> FROM 절에 조인 조건을 명시하는 것이 가장 깔끔하고 가독성이 좋다.
 
+### SELF JOIN
+- 동일테이블 사이의 조인
+- 반드시 테이블 `ALIAS`를 사용
+- 같은 테이블이지만 서로 다른 접두사를 사용하여 논리적으로 다른 테이블을 조인하는 것
