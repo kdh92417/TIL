@@ -17,5 +17,34 @@
 
 <br>
 
-### 
+CASCADE DELETE의 전파
+
+GROUP BY : 같은값끼리 그룹화 되어지는 것
+HAVING : 그룹되어진 튜플들을 필터링 하는 것 (GROUP BY는 그룹을 필터링)
+WHERE : 튜플을 필터링
+
+WHERE 절 조건 과 HAVING 절 조건
+
+- GROUP BY 는 오퍼레이션을 많이 잡아먹음 why?
+
+HAVING과 WHERE절의 성능차이는 엄청크다.
+
+
+```mysql
+WITH temp AS (
+    SELECT AVG(t.고객수) AS 평균고객수
+    FROM (
+            SELECT COUNT(customerId) AS 고객수
+            FROM s_customers
+            GROUP BY country 
+         ) AS t
+)
+SELECT country
+     , COUNT(customerId) AS 고객수
+     , T.평균고객수
+FROM s_customers C, temp T
+GROUP BY country
+HAVING 고객수 > T.평균고객수
+ORDER BY 고객수 DESC, country
+```
 

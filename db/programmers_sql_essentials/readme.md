@@ -4,10 +4,12 @@
 
 ## 강의 정리
 
+- [DB, ERD](https://github.com/kdh92417/TIL/blob/master/db/programmers_sql_essentials/erd.md)
 - [DDL, DML](https://github.com/kdh92417/TIL/blob/master/db/programmers_sql_essentials/ddl_and_dml.md)
 - [DML - 다중 테이블 검색문](https://github.com/kdh92417/TIL/blob/master/db/programmers_sql_essentials/dml_multi_table_search.md)
 - [DML - 서브쿼리](https://github.com/kdh92417/TIL/blob/master/db/programmers_sql_essentials/dml_sub_query.md)
 - [DDL - 무결성 유지 메커니즘](https://github.com/kdh92417/TIL/blob/master/db/programmers_sql_essentials/ddl_integrity.md)
+
 
 ## 주차별 과제
 
