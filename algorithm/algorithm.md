@@ -161,6 +161,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 - [Programmers - 메뉴 리뉴얼](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/메뉴리뉴얼.md)
 - [Programmers - 방금그곡](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/방금그곡.md)
 - [Programmers - 오픈채팅방](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/오픈채팅방.md)
+- [Programmers - 행렬 테두리 회전하기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/행렬_테두리_회전하기.md)
 
 ### Sliding Window
 
