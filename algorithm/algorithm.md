@@ -112,6 +112,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [BaekJoon - 1300. K번째 수](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1300.md)
 - [167. Two Sum II - Input array is sorted](https://github.com/kdh92417/TIL/blob/master/algorithm/leetcode/167.md)
+- [Programmers - 입국심사](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/입국심사.md)
 
 ### LIS(Longest Increasing Subsequence)
 
