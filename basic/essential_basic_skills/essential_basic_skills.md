@@ -11,3 +11,4 @@
 - [깔끔한 코드를 위하여! 클린코드](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/clean_code.md)
 - [프로그래밍 패러다임](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/programming_paradigm.md)
 - [객체지향 프로그래밍](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/object_oriented_programming.md)
+- [SOLID 원칙](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/5_solid_principles.md)
