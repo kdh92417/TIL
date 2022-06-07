@@ -23,3 +23,7 @@
 
 - [테스트 코드 작성](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/test_code.md)
 - [테스트 종류](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/test_type.md)
+
+### 아키텍처 기초와 패턴
+
+- [소프트웨어 아키텍처](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/software_architecture.md)
