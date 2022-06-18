@@ -106,4 +106,87 @@ src/
 >
 > 보통 컴파일 의존성에서는 고수준을 의존 한 후, 런타임에서 의존성을 주입(의존성 주입 프레임워크를 많이 활용)
 
-###  
+<br>
+
+### 포트 구현 예시
+
+- 포트는 인터페이스(추상 클래스)로 구현 - 고수준
+  ```python
+  # src/application/port/outbound/product_repository.py
+
+  from abc import ABC, abstractmethod
+  from src.domain.product import Product
+
+  class ProductRepository(ABC):
+      @abstractmethod
+      def save(product: Product) -> None:
+          pass
+  ```
+
+- 위의 포트를 구현한 클래스는 `src/adapter/outbound/repositories/product_repository.py` 에 구현(어댑터) - 저수준
+
+<br>
+
+
+### 포트 구현 : as-is(레이어드 아키텍처), to-bo(헥사고날 아키텍처)
+
+- as-is : 레이어드 아키텍처(도메인 레이어에서 인프라스트럭처 레이어 의존)
+  ```python
+  # src/domain_layer/product.py
+
+  from sqlalchemy import Column, String, Integer
+  # DB와 연결하는 일은 인프라스트럭처 레이어에서의 일입니다.
+  from src.infrastructure_layer.database import Base  
+
+  # 도메인 레이어의 컴포넌트(Product)는 인프라스트럭쳐 레이어의 컴포넌트(Base)에 의존합니다.
+  class Product(Base):
+      __tablename__ = 'product'
+      
+      id = Column(Integer, primary_key=True)
+      name = Column(String)
+      price = Column(Integer)
+  ```
+
+- to-be : 도메인 레이어는 이제 인프라스트럭처 레이어를 의존하지 않는다.
+  ```python
+  # src/domain/product.py
+
+  from dataclasses import dataclass
+
+  @dataclass
+  class Product:
+      id: int
+      name: str
+      price: int
+  ```
+
+- to-be : 어댑터 구현 (외부서비스와 연결해주는 인터페이스) - 고수준 코드를 구현한 저수준 코드
+  ```python
+  # src/adapter/outbound/product_repository.py
+
+  ...
+  from src.application.port.outbound.product_repository import ProductRepository
+
+  # 고수준 코드의 포트를 상속받아서 저수준 코드의 어댑터 구현
+  class MysqlProductRepository(ProductRepository):
+      ...
+
+      def save(self, name: str, price: int):
+          product = Product(name, price)
+          with self.db.Session() as session:
+              ...
+              session.commit()
+          ...
+  ```
+
+<br>
+
+## Conclusion
+
+### 장점
+- 중요한 부분(애플리케이션과 도메인)과 덜 중요한 부분(어댑터)를 구분
+- 의존성 방향을 중요한 것으로 흐르게 함으로써 -> 덜 중요한 부분을 언제든 바꿀 수 있도록 유연하게 설계
+- 더이상 인프라스트럭처 중심의 설계 X, 코드 확장 O
+
+### 문제점
+- 어댑터, 포트등의 개념과 보일러 플레이트 코드가 늘어날 수 있다
