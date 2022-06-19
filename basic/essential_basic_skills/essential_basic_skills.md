@@ -30,7 +30,7 @@
 - [레이어드 아키텍처](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/layered_architecture.md)
 - [헥사고날 아키텍처](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/hexagonal_architecture.md)
 - [클린 아키텍처](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/clean_architecture.md)
+- [모놀리스와 마이크로서비스 아키텍처](https://github.com/kdh92417/TIL/blob/master/basic/essential_basic_skills/monolithic_architecture.md)
 
 
 
-monolithic_architecture
