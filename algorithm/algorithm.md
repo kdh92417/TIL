@@ -100,7 +100,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 ### Tree
 
 - [BaekJoon - 1991. 트리순회](https://github.com/kdh92417/TIL/blob/master/algorithm/baekjoon/1991.md)
-
+- [Programmers - 다단계 칫솔 판매](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/다단계_칫솔_판매.md)
 
 ### Heap
 

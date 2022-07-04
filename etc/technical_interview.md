@@ -21,3 +21,26 @@
 ## Python
 
 - [정리해야됨! - Immutable 객체와 mutable 객체](https://github.com/kdh92417/TIL/blob/master/etc/interview/immutable_and_mutable.md)
+
+<br>
+
+## 면접 때 받았던 질문들
+
+### 구조
+- 어떤 것이 좋은 아키텍처인가?
+
+### DB
+
+- MySQL, MS-SQL의 차이
+- 쿼리 성능을 볼 때 보는 것
+
+### Django
+- Django 구조 설명을 해보세요
+- ORM을 쓰는 것과 아닌 것의 차이
+
+### 채용관련
+
+- 채용되어야되는 이유
+- 왜 이직하려는가?
+- 어떤 개발자가 되고싶은가?
+- 대기업보다 스타트업을 지원하는 이유
