@@ -236,7 +236,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 ### Lv 2
 
-- [주차 요금 계산](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/소수만들기.md)
+- [주차 요금 계산](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/주차요금계산.md)
 
 <br>
 
