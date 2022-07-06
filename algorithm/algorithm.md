@@ -234,6 +234,10 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [소수 만들기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/소수만들기.md)
 
+### Lv 2
+
+- [주차 요금 계산](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/소수만들기.md)
+
 <br>
 
 ## 못푼 문제들
