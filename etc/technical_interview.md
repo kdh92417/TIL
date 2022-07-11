@@ -12,6 +12,12 @@
 
 <br>
 
+## DB
+
+- 정규화
+
+<br>
+
 ## Django
 
 - [쿼리셋](https://github.com/kdh92417/TIL/blob/master/etc/interview/query_set.md)
@@ -32,6 +38,7 @@
 ### DB
 
 - MySQL, MS-SQL의 차이
+- ERD를 설계할때 어떤식으로 설계했는지?
 - 쿼리 성능을 볼 때 보는 것
 
 ### Django

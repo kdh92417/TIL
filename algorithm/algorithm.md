@@ -238,6 +238,12 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 
 - [주차 요금 계산](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/주차요금계산.md)
 
+### Lv 3
+
+- [주차 요금 계산](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/택시합승.md)
+- [등굣길](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/등굣길.md)
+
+
 <br>
 
 ## 못푼 문제들
