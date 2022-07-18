@@ -14,7 +14,7 @@
 
 ## DB
 
-- 정규화
+- [정규화](https://github.com/kdh92417/TIL/blob/master/etc/interview/db/정규화.md)
 
 <br>
 
