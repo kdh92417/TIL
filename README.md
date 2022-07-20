@@ -100,6 +100,7 @@
 ### 면접
 
 - [기술 면접 준비](https://github.com/kdh92417/TIL/blob/master/etc/technical_interview.md)
+- [예상 질문과 답변](https://github.com/kdh92417/TIL/blob/master/etc/interview/예상질문과답변.md)
 
 
 
