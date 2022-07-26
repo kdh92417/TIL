@@ -233,6 +233,7 @@ codeit 사이트에서 알고리즘 공부한 내용을 정리하여 둡니다.
 ### Lv 1
 
 - [소수 만들기](https://github.com/kdh92417/TIL/blob/master/algorithm/programmers/소수만들기.md)
+- [실패율]()
 
 ### Lv 2
 
